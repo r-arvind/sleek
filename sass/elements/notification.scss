@@ -1,0 +1,19 @@
+$notification-background: $background !default;
+$notification-radius: $radius !default;
+$notification-padding: 1.25rem 2.5rem 1.25rem 1.5rem !default;
+
+.notification{
+    @include block;
+    background-color: $notification-background;
+    border-radius: $notification-radius;
+    padding: $notification-padding;
+    position: relative;
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text:nth($pair,2);
+        &.is-#{$name} {
+            background-color: $bgcolor;
+            color: $text;
+        }
+    }
+}

@@ -39,5 +39,13 @@
     &[disabled]{
       cursor: not-allowed;
     }
+}
 
+@mixin unselectable{
+    user-select: none;
+}
+@mixin block{
+    &:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
 }

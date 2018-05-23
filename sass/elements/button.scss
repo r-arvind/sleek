@@ -1,11 +1,10 @@
-//default variables
-$button-color: $grey-er !default;
-$button-background-color: $white !default;
+$button-color: $grey-er;
+$button-background-color: $white;
 $button-border: $white-er;
 
-//button class
 .button, button, input[type=button], input[type=submit] {
   @include button-control-flex;
+  @include unselectable;
   background-color: $button-background-color;
   color: $button-color;
   cursor: pointer;
@@ -37,7 +36,7 @@ $button-border: $white-er;
     color: $black;
     border-color: $black;
   }
-  
+
   @each $name,
   $pair in $colorschemes {
     $bgcolor: nth($pair, 1);
@@ -78,5 +77,10 @@ $button-border: $white-er;
   }
   &.is-large {
     font-size: $size-large;
+  }
+  &.is-block{
+    width:90%;
+    margin:auto;
+    display: block;
   }
 }

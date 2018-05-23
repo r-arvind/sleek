@@ -446,6 +446,7 @@ textarea {
   justify-content: flex-start;
   position: relative;
   vertical-align: top;
+  user-select: none;
   background-color: #ffffff;
   color: #161616;
   cursor: pointer;
@@ -714,6 +715,68 @@ textarea {
 
 .button.is-large, button.is-large, input[type=button].is-large, input[type=submit].is-large {
   font-size: 1.5rem;
+}
+
+.button.is-block, button.is-block, input[type=button].is-block, input[type=submit].is-block {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.notification {
+  background-color: #dfd7ce;
+  border-radius: 4px;
+  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+  position: relative;
+}
+
+.notification:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.notification.is-white {
+  background-color: #ffffff;
+  color: #161616;
+}
+
+.notification.is-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.notification.is-primary {
+  background-color: #00aba9;
+  color: #ffffff;
+}
+
+.notification.is-danger {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.notification.is-warning {
+  background-color: #f0d147;
+  color: #ffffff;
+}
+
+.notification.is-success {
+  background-color: #24ac41;
+  color: #ffffff;
+}
+
+.notification.is-info {
+  background-color: #2277d8;
+  color: #ffffff;
+}
+
+.notification.is-light {
+  background-color: #dfd7ce;
+  color: #292828;
+}
+
+.notification.is-dark {
+  background-color: #292828;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=sleek.css.map */
