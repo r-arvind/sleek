@@ -1,0 +1,82 @@
+//default variables
+$button-color: $grey-er !default;
+$button-background-color: $white !default;
+$button-border: $white-er;
+
+//button class
+.button, button, input[type=button], input[type=submit] {
+  @include button-control-flex;
+  background-color: $button-background-color;
+  color: $button-color;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid $button-border;
+  text-decoration: none;
+  padding: 0.35em 0.75em;
+  border-radius: $radius-small;
+  transition: all 0.3s ease 0s;
+  
+  &:hover,
+  &.is-hovered {
+    background-color: $button-background-color;
+    color: $black;
+    border-color: $white-ish;
+  }
+  &:focus,
+  &.is-focused {
+    background-color: $button-background-color;
+    color: $black;
+  }
+  &:active,
+  &.is-active {
+    background-color: $button-background-color;
+    color: $black;
+    border-color: $black;
+  }
+  
+  @each $name,
+  $pair in $colorschemes {
+    $bgcolor: nth($pair, 1);
+    $textcolor: nth($pair, 2);
+    &.is-#{$name} {
+      background-color: $bgcolor;
+      color: $textcolor;
+      border-color: transparent;
+      @if($name=='white') {
+        border: 1px solid $button-border;
+      }
+      &:hover,
+      &.is-hovered {
+        background-color: darken($bgcolor, 5%);
+        color: $textcolor;
+        border-color: transparent;
+      }
+      &:focus,
+      &.is-focused {
+        background-color: $bgcolor;
+        color: $textcolor;
+        border-color: transparent;
+      }
+      &:active,
+      &.is-active {
+        background-color: darken($bgcolor, 5%);
+        color: $textcolor;
+        border-color: transparent;
+      }
+    }
+  }
+  &.is-small {
+    border-radius: $radius-small;
+    font-size: $size-small;
+  }
+  &.is-medium {
+    font-size: $size-medium;
+  }
+  &.is-large {
+    font-size: $size-large;
+  }
+}

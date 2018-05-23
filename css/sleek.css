@@ -1,0 +1,719 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+.is-centered {
+  text-align: center;
+}
+
+.is-left {
+  text-align: left;
+}
+
+.is-right {
+  text-align: right;
+}
+
+.is-block {
+  display: block;
+}
+
+.is-disabled {
+  pointer-events: none;
+}
+
+.is-inline {
+  display: inline;
+}
+
+.is-marginless {
+  margin: 0 !important;
+}
+
+.is-unselectable {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.button, button, input[type=button], input[type=submit] {
+  appearance: none;
+  align-items: center;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  justify-content: flex-start;
+  position: relative;
+  vertical-align: top;
+  background-color: #ffffff;
+  color: #161616;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid #dfd7ce;
+  text-decoration: none;
+  padding: 0.35em 0.75em;
+  border-radius: 2px;
+  transition: all 0.3s ease 0s;
+}
+
+.button:focus, .button.is-focused, .button:active, .button.is-active, button:focus, button.is-focused, button:active, button.is-active, input[type=button]:focus, input[type=button].is-focused, input[type=button]:active, input[type=button].is-active, input[type=submit]:focus, input[type=submit].is-focused, input[type=submit]:active, input[type=submit].is-active {
+  outline: none;
+}
+
+.button[disabled], button[disabled], input[type=button][disabled], input[type=submit][disabled] {
+  cursor: not-allowed;
+}
+
+.button:hover, .button.is-hovered, button:hover, button.is-hovered, input[type=button]:hover, input[type=button].is-hovered, input[type=submit]:hover, input[type=submit].is-hovered {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #f2f2f2;
+}
+
+.button:focus, .button.is-focused, button:focus, button.is-focused, input[type=button]:focus, input[type=button].is-focused, input[type=submit]:focus, input[type=submit].is-focused {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button:active, .button.is-active, button:active, button.is-active, input[type=button]:active, input[type=button].is-active, input[type=submit]:active, input[type=submit].is-active {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+
+.button.is-white, button.is-white, input[type=button].is-white, input[type=submit].is-white {
+  background-color: #ffffff;
+  color: #161616;
+  border-color: transparent;
+  border: 1px solid #dfd7ce;
+}
+
+.button.is-white:hover, .button.is-white.is-hovered, button.is-white:hover, button.is-white.is-hovered, input[type=button].is-white:hover, input[type=button].is-white.is-hovered, input[type=submit].is-white:hover, input[type=submit].is-white.is-hovered {
+  background-color: #f2f2f2;
+  color: #161616;
+  border-color: transparent;
+}
+
+.button.is-white:focus, .button.is-white.is-focused, button.is-white:focus, button.is-white.is-focused, input[type=button].is-white:focus, input[type=button].is-white.is-focused, input[type=submit].is-white:focus, input[type=submit].is-white.is-focused {
+  background-color: #ffffff;
+  color: #161616;
+  border-color: transparent;
+}
+
+.button.is-white:active, .button.is-white.is-active, button.is-white:active, button.is-white.is-active, input[type=button].is-white:active, input[type=button].is-white.is-active, input[type=submit].is-white:active, input[type=submit].is-white.is-active {
+  background-color: #f2f2f2;
+  color: #161616;
+  border-color: transparent;
+}
+
+.button.is-black, button.is-black, input[type=button].is-black, input[type=submit].is-black {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-black:hover, .button.is-black.is-hovered, button.is-black:hover, button.is-black.is-hovered, input[type=button].is-black:hover, input[type=button].is-black.is-hovered, input[type=submit].is-black:hover, input[type=submit].is-black.is-hovered {
+  background-color: black;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-black:focus, .button.is-black.is-focused, button.is-black:focus, button.is-black.is-focused, input[type=button].is-black:focus, input[type=button].is-black.is-focused, input[type=submit].is-black:focus, input[type=submit].is-black.is-focused {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-black:active, .button.is-black.is-active, button.is-black:active, button.is-black.is-active, input[type=button].is-black:active, input[type=button].is-black.is-active, input[type=submit].is-black:active, input[type=submit].is-black.is-active {
+  background-color: black;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-primary, button.is-primary, input[type=button].is-primary, input[type=submit].is-primary {
+  background-color: #00aba9;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-primary:hover, .button.is-primary.is-hovered, button.is-primary:hover, button.is-primary.is-hovered, input[type=button].is-primary:hover, input[type=button].is-primary.is-hovered, input[type=submit].is-primary:hover, input[type=submit].is-primary.is-hovered {
+  background-color: #009290;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-primary:focus, .button.is-primary.is-focused, button.is-primary:focus, button.is-primary.is-focused, input[type=button].is-primary:focus, input[type=button].is-primary.is-focused, input[type=submit].is-primary:focus, input[type=submit].is-primary.is-focused {
+  background-color: #00aba9;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-primary:active, .button.is-primary.is-active, button.is-primary:active, button.is-primary.is-active, input[type=button].is-primary:active, input[type=button].is-primary.is-active, input[type=submit].is-primary:active, input[type=submit].is-primary.is-active {
+  background-color: #009290;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-danger, button.is-danger, input[type=button].is-danger, input[type=submit].is-danger {
+  background-color: #f44336;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-danger:hover, .button.is-danger.is-hovered, button.is-danger:hover, button.is-danger.is-hovered, input[type=button].is-danger:hover, input[type=button].is-danger.is-hovered, input[type=submit].is-danger:hover, input[type=submit].is-danger.is-hovered {
+  background-color: #f32c1e;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-danger:focus, .button.is-danger.is-focused, button.is-danger:focus, button.is-danger.is-focused, input[type=button].is-danger:focus, input[type=button].is-danger.is-focused, input[type=submit].is-danger:focus, input[type=submit].is-danger.is-focused {
+  background-color: #f44336;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-danger:active, .button.is-danger.is-active, button.is-danger:active, button.is-danger.is-active, input[type=button].is-danger:active, input[type=button].is-danger.is-active, input[type=submit].is-danger:active, input[type=submit].is-danger.is-active {
+  background-color: #f32c1e;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-warning, button.is-warning, input[type=button].is-warning, input[type=submit].is-warning {
+  background-color: #f0d147;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-warning:hover, .button.is-warning.is-hovered, button.is-warning:hover, button.is-warning.is-hovered, input[type=button].is-warning:hover, input[type=button].is-warning.is-hovered, input[type=submit].is-warning:hover, input[type=submit].is-warning.is-hovered {
+  background-color: #eecb2f;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-warning:focus, .button.is-warning.is-focused, button.is-warning:focus, button.is-warning.is-focused, input[type=button].is-warning:focus, input[type=button].is-warning.is-focused, input[type=submit].is-warning:focus, input[type=submit].is-warning.is-focused {
+  background-color: #f0d147;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-warning:active, .button.is-warning.is-active, button.is-warning:active, button.is-warning.is-active, input[type=button].is-warning:active, input[type=button].is-warning.is-active, input[type=submit].is-warning:active, input[type=submit].is-warning.is-active {
+  background-color: #eecb2f;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-success, button.is-success, input[type=button].is-success, input[type=submit].is-success {
+  background-color: #24ac41;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-success:hover, .button.is-success.is-hovered, button.is-success:hover, button.is-success.is-hovered, input[type=button].is-success:hover, input[type=button].is-success.is-hovered, input[type=submit].is-success:hover, input[type=submit].is-success.is-hovered {
+  background-color: #209739;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-success:focus, .button.is-success.is-focused, button.is-success:focus, button.is-success.is-focused, input[type=button].is-success:focus, input[type=button].is-success.is-focused, input[type=submit].is-success:focus, input[type=submit].is-success.is-focused {
+  background-color: #24ac41;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-success:active, .button.is-success.is-active, button.is-success:active, button.is-success.is-active, input[type=button].is-success:active, input[type=button].is-success.is-active, input[type=submit].is-success:active, input[type=submit].is-success.is-active {
+  background-color: #209739;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-info, button.is-info, input[type=button].is-info, input[type=submit].is-info {
+  background-color: #2277d8;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-info:hover, .button.is-info.is-hovered, button.is-info:hover, button.is-info.is-hovered, input[type=button].is-info:hover, input[type=button].is-info.is-hovered, input[type=submit].is-info:hover, input[type=submit].is-info.is-hovered {
+  background-color: #1f6bc2;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-info:focus, .button.is-info.is-focused, button.is-info:focus, button.is-info.is-focused, input[type=button].is-info:focus, input[type=button].is-info.is-focused, input[type=submit].is-info:focus, input[type=submit].is-info.is-focused {
+  background-color: #2277d8;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-info:active, .button.is-info.is-active, button.is-info:active, button.is-info.is-active, input[type=button].is-info:active, input[type=button].is-info.is-active, input[type=submit].is-info:active, input[type=submit].is-info.is-active {
+  background-color: #1f6bc2;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-light, button.is-light, input[type=button].is-light, input[type=submit].is-light {
+  background-color: #dfd7ce;
+  color: #292828;
+  border-color: transparent;
+}
+
+.button.is-light:hover, .button.is-light.is-hovered, button.is-light:hover, button.is-light.is-hovered, input[type=button].is-light:hover, input[type=button].is-light.is-hovered, input[type=submit].is-light:hover, input[type=submit].is-light.is-hovered {
+  background-color: #d5cabf;
+  color: #292828;
+  border-color: transparent;
+}
+
+.button.is-light:focus, .button.is-light.is-focused, button.is-light:focus, button.is-light.is-focused, input[type=button].is-light:focus, input[type=button].is-light.is-focused, input[type=submit].is-light:focus, input[type=submit].is-light.is-focused {
+  background-color: #dfd7ce;
+  color: #292828;
+  border-color: transparent;
+}
+
+.button.is-light:active, .button.is-light.is-active, button.is-light:active, button.is-light.is-active, input[type=button].is-light:active, input[type=button].is-light.is-active, input[type=submit].is-light:active, input[type=submit].is-light.is-active {
+  background-color: #d5cabf;
+  color: #292828;
+  border-color: transparent;
+}
+
+.button.is-dark, button.is-dark, input[type=button].is-dark, input[type=submit].is-dark {
+  background-color: #292828;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-dark:hover, .button.is-dark.is-hovered, button.is-dark:hover, button.is-dark.is-hovered, input[type=button].is-dark:hover, input[type=button].is-dark.is-hovered, input[type=submit].is-dark:hover, input[type=submit].is-dark.is-hovered {
+  background-color: #1c1b1b;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-dark:focus, .button.is-dark.is-focused, button.is-dark:focus, button.is-dark.is-focused, input[type=button].is-dark:focus, input[type=button].is-dark.is-focused, input[type=submit].is-dark:focus, input[type=submit].is-dark.is-focused {
+  background-color: #292828;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-dark:active, .button.is-dark.is-active, button.is-dark:active, button.is-dark.is-active, input[type=button].is-dark:active, input[type=button].is-dark.is-active, input[type=submit].is-dark:active, input[type=submit].is-dark.is-active {
+  background-color: #1c1b1b;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.button.is-small, button.is-small, input[type=button].is-small, input[type=submit].is-small {
+  border-radius: 2px;
+  font-size: 0.75rem;
+}
+
+.button.is-medium, button.is-medium, input[type=button].is-medium, input[type=submit].is-medium {
+  font-size: 1.25rem;
+}
+
+.button.is-large, button.is-large, input[type=button].is-large, input[type=submit].is-large {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=sleek.css.map */
