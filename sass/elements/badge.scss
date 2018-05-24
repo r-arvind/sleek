@@ -1,3 +1,31 @@
+.badge:not(body){
+    align-items: center;
+    background-color: $background;
+    color: $text;
+    border-radius: $radius-small;
+    display: inline-flex;
+    font-size: $size-small;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: 0.75em; 
+    padding-right: 0.75em; 
+    white-space: nowrap;
+    @each $name, $pair in $colorschemes{
+        $bgcolor: nth($pair, 1);
+        $text-color: nth($pair, 2);
+        &.is-#{$name}{
+            background-color: $bgcolor;
+            color: $text-color;
+        }
+    }
+    &.is-medium{
+        font-size: $size-normal;
+    }
+    &.is-large{
+        font-size: $size-large;
+    }
+}
+
 .badges{
     align-items: center;
     display: flex;
@@ -15,9 +43,11 @@
     &:not(:last-child){
         margin-bottom: 1 rem;
     }
+
     &.is-sticky{
         .badge{
             margin-right:0;
+            border-width: 0;
             &:not(:first-child){
                 border-bottom-left-radius: 0;
                 border-top-left-radius: 0;
