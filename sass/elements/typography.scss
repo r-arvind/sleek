@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@for $i from 1 through 6{
+    h#{$i},.h#{$i} {
+        font-size: nth($sizes, $i);
+        font-family:'Open Sans', sans-serif ;
+        @include block;
+        word-break: break-word;
+    }
+}
+
+.text{
+    @include block;
+}
+
+

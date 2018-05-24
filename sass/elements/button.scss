@@ -36,15 +36,15 @@ $button-border: $white-er;
     background-color: $button-background-color;
     color: $black;
     border-color: $black;
-    box-shadow: 10px 10px 10px $bgcolor;
+    box-shadow: 0px 0px 5px $grey-er;
   }
 
   @each $name, $pair in $colorschemes {
     $bgcolor: nth($pair, 1);
-    $textcolor: nth($pair, 2);
+    $text-color: nth($pair, 2);
     &.is-#{$name} {
       background-color: $bgcolor;
-      color: $textcolor;
+      color: $text-color;
       border-color: transparent;
       @if($name=='white') {
         border: 1px solid $button-border;
@@ -52,18 +52,18 @@ $button-border: $white-er;
       &:hover,
       &.is-hovered {
         background-color: darken($bgcolor, 5%);
-        color: $textcolor;
+        color: $text-color;
         border-color: transparent;
       }
       &:focus,
       &.is-focused {
-        box-shadow: 0px 0px 100px $bgcolor;
+        box-shadow: 0px 0px 5px $bgcolor;
         }
-      }
+
       &:active,
       &.is-active {
         background-color: darken($bgcolor, 100%);
-        color: $textcolor;
+        color: $text-color;
         border-color: transparent;
       }
       &.is-inverted {
@@ -72,11 +72,12 @@ $button-border: $white-er;
         color:$bgcolor;
         &:hover,&:focus {
           background-color: $bgcolor;
-          color:$textcolor;
+          color:$text-color;
           border-color: $bgcolor;
         }
       }
     }
+  }
   
   &.is-small {
     border-radius: $radius-small;
@@ -87,6 +88,9 @@ $button-border: $white-er;
   }
   &.is-large {
     font-size: $size-large;
+  }
+  &.is-rounded{
+    border-radius: $radius-rounded;
   }
   &.is-block{
     width:90%;

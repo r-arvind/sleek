@@ -1,0 +1,23 @@
+@import "../utilities/initial-variables";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html{
+    background-color: $white;
+    font-size: 16px;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-size-adjust: 100%; 
+}
+
+article,aside,figure,footer,header,hgroup,section{
+    display: block;
+}
+
+body,button,input,select,textarea{
+    font-family: $family-sans-serif; //'Montserrat', sans-serif;
+}
+
+body{
+    color: $text;
+    font-size: 1rem;
+}

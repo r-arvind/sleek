@@ -34,7 +34,7 @@ $colorschemes: ("white" : ($white,$grey-er),
                 "dark" : ($grey,$white),
                 ) !default;
 
-$background: $white-er !default;
+$background: $white-ish !default;
 $border: $grey !default;
 $text: $grey-er !default;
 $text-light: $grey !default;
@@ -54,7 +54,7 @@ $size-normal: $size-6 !default;
 $size-medium: $size-5 !default;
 $size-large: $size-4 !default;
 
-$sizes:  $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7;
+$sizes:  ($size-1 ,$size-2 ,$size-3 ,$size-4 ,$size-5 ,$size-6 ,$size-7);
 
 
 $family-sans-serif: "Calibre", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;

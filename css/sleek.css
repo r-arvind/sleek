@@ -3,6 +3,8 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -404,6 +406,28 @@ textarea {
   /* 2 */
 }
 
+html {
+  background-color: #ffffff;
+  font-size: 16px;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-size-adjust: 100%;
+}
+
+article, aside, figure, footer, header, hgroup, section {
+  display: block;
+}
+
+body, button, input, select, textarea {
+  font-family: "Calibre", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+}
+
+body {
+  color: #161616;
+  font-size: 1rem;
+}
+
 .is-centered {
   text-align: center;
 }
@@ -459,6 +483,7 @@ textarea {
   text-decoration: none;
   padding: 0.35em 0.75em;
   border-radius: 2px;
+  box-shadow: none;
   transition: all 0.3s ease 0s;
 }
 
@@ -485,7 +510,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-color: #000000;
-  box-shadow: 1px 1px 1px 1px #ffffff;
+  box-shadow: 0px 0px 5px #161616;
 }
 
 .button.is-white, button.is-white, input[type=button].is-white, input[type=submit].is-white {
@@ -502,13 +527,11 @@ textarea {
 }
 
 .button.is-white:focus, .button.is-white.is-focused, button.is-white:focus, button.is-white.is-focused, input[type=button].is-white:focus, input[type=button].is-white.is-focused, input[type=submit].is-white:focus, input[type=submit].is-white.is-focused {
-  background-color: #ffffff;
-  color: #161616;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #ffffff;
 }
 
 .button.is-white:active, .button.is-white.is-active, button.is-white:active, button.is-white.is-active, input[type=button].is-white:active, input[type=button].is-white.is-active, input[type=submit].is-white:active, input[type=submit].is-white.is-active {
-  background-color: #f2f2f2;
+  background-color: black;
   color: #161616;
   border-color: transparent;
 }
@@ -519,15 +542,9 @@ textarea {
   color: #ffffff;
 }
 
-.button.is-white.is-inverted:hover, button.is-white.is-inverted:hover, input[type=button].is-white.is-inverted:hover, input[type=submit].is-white.is-inverted:hover {
+.button.is-white.is-inverted:hover, .button.is-white.is-inverted:focus, button.is-white.is-inverted:hover, button.is-white.is-inverted:focus, input[type=button].is-white.is-inverted:hover, input[type=button].is-white.is-inverted:focus, input[type=submit].is-white.is-inverted:hover, input[type=submit].is-white.is-inverted:focus {
   background-color: #ffffff;
   color: #161616;
-  border-color: #ffffff;
-}
-
-.button.is-white.is-inverted:focus, button.is-white.is-inverted:focus, input[type=button].is-white.is-inverted:focus, input[type=submit].is-white.is-inverted:focus {
-  background-color: transparent;
-  color: #ffffff;
   border-color: #ffffff;
 }
 
@@ -544,9 +561,7 @@ textarea {
 }
 
 .button.is-black:focus, .button.is-black.is-focused, button.is-black:focus, button.is-black.is-focused, input[type=button].is-black:focus, input[type=button].is-black.is-focused, input[type=submit].is-black:focus, input[type=submit].is-black.is-focused {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #000000;
 }
 
 .button.is-black:active, .button.is-black.is-active, button.is-black:active, button.is-black.is-active, input[type=button].is-black:active, input[type=button].is-black.is-active, input[type=submit].is-black:active, input[type=submit].is-black.is-active {
@@ -561,15 +576,9 @@ textarea {
   color: #000000;
 }
 
-.button.is-black.is-inverted:hover, button.is-black.is-inverted:hover, input[type=button].is-black.is-inverted:hover, input[type=submit].is-black.is-inverted:hover {
+.button.is-black.is-inverted:hover, .button.is-black.is-inverted:focus, button.is-black.is-inverted:hover, button.is-black.is-inverted:focus, input[type=button].is-black.is-inverted:hover, input[type=button].is-black.is-inverted:focus, input[type=submit].is-black.is-inverted:hover, input[type=submit].is-black.is-inverted:focus {
   background-color: #000000;
   color: #ffffff;
-  border-color: #000000;
-}
-
-.button.is-black.is-inverted:focus, button.is-black.is-inverted:focus, input[type=button].is-black.is-inverted:focus, input[type=submit].is-black.is-inverted:focus {
-  background-color: transparent;
-  color: #000000;
   border-color: #000000;
 }
 
@@ -586,13 +595,11 @@ textarea {
 }
 
 .button.is-primary:focus, .button.is-primary.is-focused, button.is-primary:focus, button.is-primary.is-focused, input[type=button].is-primary:focus, input[type=button].is-primary.is-focused, input[type=submit].is-primary:focus, input[type=submit].is-primary.is-focused {
-  background-color: #00aba9;
-  color: #ffffff;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #00aba9;
 }
 
 .button.is-primary:active, .button.is-primary.is-active, button.is-primary:active, button.is-primary.is-active, input[type=button].is-primary:active, input[type=button].is-primary.is-active, input[type=submit].is-primary:active, input[type=submit].is-primary.is-active {
-  background-color: #009290;
+  background-color: black;
   color: #ffffff;
   border-color: transparent;
 }
@@ -603,15 +610,9 @@ textarea {
   color: #00aba9;
 }
 
-.button.is-primary.is-inverted:hover, button.is-primary.is-inverted:hover, input[type=button].is-primary.is-inverted:hover, input[type=submit].is-primary.is-inverted:hover {
+.button.is-primary.is-inverted:hover, .button.is-primary.is-inverted:focus, button.is-primary.is-inverted:hover, button.is-primary.is-inverted:focus, input[type=button].is-primary.is-inverted:hover, input[type=button].is-primary.is-inverted:focus, input[type=submit].is-primary.is-inverted:hover, input[type=submit].is-primary.is-inverted:focus {
   background-color: #00aba9;
   color: #ffffff;
-  border-color: #00aba9;
-}
-
-.button.is-primary.is-inverted:focus, button.is-primary.is-inverted:focus, input[type=button].is-primary.is-inverted:focus, input[type=submit].is-primary.is-inverted:focus {
-  background-color: transparent;
-  color: #00aba9;
   border-color: #00aba9;
 }
 
@@ -628,13 +629,11 @@ textarea {
 }
 
 .button.is-danger:focus, .button.is-danger.is-focused, button.is-danger:focus, button.is-danger.is-focused, input[type=button].is-danger:focus, input[type=button].is-danger.is-focused, input[type=submit].is-danger:focus, input[type=submit].is-danger.is-focused {
-  background-color: #f44336;
-  color: #ffffff;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #f44336;
 }
 
 .button.is-danger:active, .button.is-danger.is-active, button.is-danger:active, button.is-danger.is-active, input[type=button].is-danger:active, input[type=button].is-danger.is-active, input[type=submit].is-danger:active, input[type=submit].is-danger.is-active {
-  background-color: #f32c1e;
+  background-color: black;
   color: #ffffff;
   border-color: transparent;
 }
@@ -645,15 +644,9 @@ textarea {
   color: #f44336;
 }
 
-.button.is-danger.is-inverted:hover, button.is-danger.is-inverted:hover, input[type=button].is-danger.is-inverted:hover, input[type=submit].is-danger.is-inverted:hover {
+.button.is-danger.is-inverted:hover, .button.is-danger.is-inverted:focus, button.is-danger.is-inverted:hover, button.is-danger.is-inverted:focus, input[type=button].is-danger.is-inverted:hover, input[type=button].is-danger.is-inverted:focus, input[type=submit].is-danger.is-inverted:hover, input[type=submit].is-danger.is-inverted:focus {
   background-color: #f44336;
   color: #ffffff;
-  border-color: #f44336;
-}
-
-.button.is-danger.is-inverted:focus, button.is-danger.is-inverted:focus, input[type=button].is-danger.is-inverted:focus, input[type=submit].is-danger.is-inverted:focus {
-  background-color: transparent;
-  color: #f44336;
   border-color: #f44336;
 }
 
@@ -670,13 +663,11 @@ textarea {
 }
 
 .button.is-warning:focus, .button.is-warning.is-focused, button.is-warning:focus, button.is-warning.is-focused, input[type=button].is-warning:focus, input[type=button].is-warning.is-focused, input[type=submit].is-warning:focus, input[type=submit].is-warning.is-focused {
-  background-color: #f0d147;
-  color: #ffffff;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #f0d147;
 }
 
 .button.is-warning:active, .button.is-warning.is-active, button.is-warning:active, button.is-warning.is-active, input[type=button].is-warning:active, input[type=button].is-warning.is-active, input[type=submit].is-warning:active, input[type=submit].is-warning.is-active {
-  background-color: #eecb2f;
+  background-color: black;
   color: #ffffff;
   border-color: transparent;
 }
@@ -687,15 +678,9 @@ textarea {
   color: #f0d147;
 }
 
-.button.is-warning.is-inverted:hover, button.is-warning.is-inverted:hover, input[type=button].is-warning.is-inverted:hover, input[type=submit].is-warning.is-inverted:hover {
+.button.is-warning.is-inverted:hover, .button.is-warning.is-inverted:focus, button.is-warning.is-inverted:hover, button.is-warning.is-inverted:focus, input[type=button].is-warning.is-inverted:hover, input[type=button].is-warning.is-inverted:focus, input[type=submit].is-warning.is-inverted:hover, input[type=submit].is-warning.is-inverted:focus {
   background-color: #f0d147;
   color: #ffffff;
-  border-color: #f0d147;
-}
-
-.button.is-warning.is-inverted:focus, button.is-warning.is-inverted:focus, input[type=button].is-warning.is-inverted:focus, input[type=submit].is-warning.is-inverted:focus {
-  background-color: transparent;
-  color: #f0d147;
   border-color: #f0d147;
 }
 
@@ -712,13 +697,11 @@ textarea {
 }
 
 .button.is-success:focus, .button.is-success.is-focused, button.is-success:focus, button.is-success.is-focused, input[type=button].is-success:focus, input[type=button].is-success.is-focused, input[type=submit].is-success:focus, input[type=submit].is-success.is-focused {
-  background-color: #24ac41;
-  color: #ffffff;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #24ac41;
 }
 
 .button.is-success:active, .button.is-success.is-active, button.is-success:active, button.is-success.is-active, input[type=button].is-success:active, input[type=button].is-success.is-active, input[type=submit].is-success:active, input[type=submit].is-success.is-active {
-  background-color: #209739;
+  background-color: black;
   color: #ffffff;
   border-color: transparent;
 }
@@ -729,15 +712,9 @@ textarea {
   color: #24ac41;
 }
 
-.button.is-success.is-inverted:hover, button.is-success.is-inverted:hover, input[type=button].is-success.is-inverted:hover, input[type=submit].is-success.is-inverted:hover {
+.button.is-success.is-inverted:hover, .button.is-success.is-inverted:focus, button.is-success.is-inverted:hover, button.is-success.is-inverted:focus, input[type=button].is-success.is-inverted:hover, input[type=button].is-success.is-inverted:focus, input[type=submit].is-success.is-inverted:hover, input[type=submit].is-success.is-inverted:focus {
   background-color: #24ac41;
   color: #ffffff;
-  border-color: #24ac41;
-}
-
-.button.is-success.is-inverted:focus, button.is-success.is-inverted:focus, input[type=button].is-success.is-inverted:focus, input[type=submit].is-success.is-inverted:focus {
-  background-color: transparent;
-  color: #24ac41;
   border-color: #24ac41;
 }
 
@@ -754,13 +731,11 @@ textarea {
 }
 
 .button.is-info:focus, .button.is-info.is-focused, button.is-info:focus, button.is-info.is-focused, input[type=button].is-info:focus, input[type=button].is-info.is-focused, input[type=submit].is-info:focus, input[type=submit].is-info.is-focused {
-  background-color: #2277d8;
-  color: #ffffff;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #2277d8;
 }
 
 .button.is-info:active, .button.is-info.is-active, button.is-info:active, button.is-info.is-active, input[type=button].is-info:active, input[type=button].is-info.is-active, input[type=submit].is-info:active, input[type=submit].is-info.is-active {
-  background-color: #1f6bc2;
+  background-color: black;
   color: #ffffff;
   border-color: transparent;
 }
@@ -771,15 +746,9 @@ textarea {
   color: #2277d8;
 }
 
-.button.is-info.is-inverted:hover, button.is-info.is-inverted:hover, input[type=button].is-info.is-inverted:hover, input[type=submit].is-info.is-inverted:hover {
+.button.is-info.is-inverted:hover, .button.is-info.is-inverted:focus, button.is-info.is-inverted:hover, button.is-info.is-inverted:focus, input[type=button].is-info.is-inverted:hover, input[type=button].is-info.is-inverted:focus, input[type=submit].is-info.is-inverted:hover, input[type=submit].is-info.is-inverted:focus {
   background-color: #2277d8;
   color: #ffffff;
-  border-color: #2277d8;
-}
-
-.button.is-info.is-inverted:focus, button.is-info.is-inverted:focus, input[type=button].is-info.is-inverted:focus, input[type=submit].is-info.is-inverted:focus {
-  background-color: transparent;
-  color: #2277d8;
   border-color: #2277d8;
 }
 
@@ -796,13 +765,11 @@ textarea {
 }
 
 .button.is-light:focus, .button.is-light.is-focused, button.is-light:focus, button.is-light.is-focused, input[type=button].is-light:focus, input[type=button].is-light.is-focused, input[type=submit].is-light:focus, input[type=submit].is-light.is-focused {
-  background-color: #dfd7ce;
-  color: #292828;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #dfd7ce;
 }
 
 .button.is-light:active, .button.is-light.is-active, button.is-light:active, button.is-light.is-active, input[type=button].is-light:active, input[type=button].is-light.is-active, input[type=submit].is-light:active, input[type=submit].is-light.is-active {
-  background-color: #d5cabf;
+  background-color: black;
   color: #292828;
   border-color: transparent;
 }
@@ -813,15 +780,9 @@ textarea {
   color: #dfd7ce;
 }
 
-.button.is-light.is-inverted:hover, button.is-light.is-inverted:hover, input[type=button].is-light.is-inverted:hover, input[type=submit].is-light.is-inverted:hover {
+.button.is-light.is-inverted:hover, .button.is-light.is-inverted:focus, button.is-light.is-inverted:hover, button.is-light.is-inverted:focus, input[type=button].is-light.is-inverted:hover, input[type=button].is-light.is-inverted:focus, input[type=submit].is-light.is-inverted:hover, input[type=submit].is-light.is-inverted:focus {
   background-color: #dfd7ce;
   color: #292828;
-  border-color: #dfd7ce;
-}
-
-.button.is-light.is-inverted:focus, button.is-light.is-inverted:focus, input[type=button].is-light.is-inverted:focus, input[type=submit].is-light.is-inverted:focus {
-  background-color: transparent;
-  color: #dfd7ce;
   border-color: #dfd7ce;
 }
 
@@ -838,13 +799,11 @@ textarea {
 }
 
 .button.is-dark:focus, .button.is-dark.is-focused, button.is-dark:focus, button.is-dark.is-focused, input[type=button].is-dark:focus, input[type=button].is-dark.is-focused, input[type=submit].is-dark:focus, input[type=submit].is-dark.is-focused {
-  background-color: #292828;
-  color: #ffffff;
-  border-color: transparent;
+  box-shadow: 0px 0px 5px #292828;
 }
 
 .button.is-dark:active, .button.is-dark.is-active, button.is-dark:active, button.is-dark.is-active, input[type=button].is-dark:active, input[type=button].is-dark.is-active, input[type=submit].is-dark:active, input[type=submit].is-dark.is-active {
-  background-color: #1c1b1b;
+  background-color: black;
   color: #ffffff;
   border-color: transparent;
 }
@@ -855,15 +814,9 @@ textarea {
   color: #292828;
 }
 
-.button.is-dark.is-inverted:hover, button.is-dark.is-inverted:hover, input[type=button].is-dark.is-inverted:hover, input[type=submit].is-dark.is-inverted:hover {
+.button.is-dark.is-inverted:hover, .button.is-dark.is-inverted:focus, button.is-dark.is-inverted:hover, button.is-dark.is-inverted:focus, input[type=button].is-dark.is-inverted:hover, input[type=button].is-dark.is-inverted:focus, input[type=submit].is-dark.is-inverted:hover, input[type=submit].is-dark.is-inverted:focus {
   background-color: #292828;
   color: #ffffff;
-  border-color: #292828;
-}
-
-.button.is-dark.is-inverted:focus, button.is-dark.is-inverted:focus, input[type=button].is-dark.is-inverted:focus, input[type=submit].is-dark.is-inverted:focus {
-  background-color: transparent;
-  color: #292828;
   border-color: #292828;
 }
 
@@ -880,6 +833,10 @@ textarea {
   font-size: 1.5rem;
 }
 
+.button.is-rounded, button.is-rounded, input[type=button].is-rounded, input[type=submit].is-rounded {
+  border-radius: 290486px;
+}
+
 .button.is-block, button.is-block, input[type=button].is-block, input[type=submit].is-block {
   width: 90%;
   margin: auto;
@@ -887,7 +844,7 @@ textarea {
 }
 
 .notification {
-  background-color: #dfd7ce;
+  background-color: #f2f2f2;
   border-radius: 4px;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   position: relative;
@@ -940,6 +897,70 @@ textarea {
 .notification.is-dark {
   background-color: #292828;
   color: #ffffff;
+}
+
+h1, .h1 {
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+}
+
+h1:not(:last-child), .h1:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+h2, .h2 {
+  font-size: 2.5rem;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+}
+
+h2:not(:last-child), .h2:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+}
+
+h3:not(:last-child), .h3:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+}
+
+h4:not(:last-child), .h4:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+}
+
+h5:not(:last-child), .h5:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+}
+
+h6:not(:last-child), .h6:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=sleek.css.map */
