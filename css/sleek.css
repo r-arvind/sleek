@@ -485,6 +485,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-color: #000000;
+  box-shadow: 1px 1px 1px 1px #ffffff;
 }
 
 .button.is-white, button.is-white, input[type=button].is-white, input[type=submit].is-white {
@@ -512,6 +513,24 @@ textarea {
   border-color: transparent;
 }
 
+.button.is-white.is-inverted, button.is-white.is-inverted, input[type=button].is-white.is-inverted, input[type=submit].is-white.is-inverted {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.button.is-white.is-inverted:hover, button.is-white.is-inverted:hover, input[type=button].is-white.is-inverted:hover, input[type=submit].is-white.is-inverted:hover {
+  background-color: #ffffff;
+  color: #161616;
+  border-color: #ffffff;
+}
+
+.button.is-white.is-inverted:focus, button.is-white.is-inverted:focus, input[type=button].is-white.is-inverted:focus, input[type=submit].is-white.is-inverted:focus {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
 .button.is-black, button.is-black, input[type=button].is-black, input[type=submit].is-black {
   background-color: #000000;
   color: #ffffff;
@@ -534,6 +553,24 @@ textarea {
   background-color: black;
   color: #ffffff;
   border-color: transparent;
+}
+
+.button.is-black.is-inverted, button.is-black.is-inverted, input[type=button].is-black.is-inverted, input[type=submit].is-black.is-inverted {
+  background-color: transparent;
+  border-color: #000000;
+  color: #000000;
+}
+
+.button.is-black.is-inverted:hover, button.is-black.is-inverted:hover, input[type=button].is-black.is-inverted:hover, input[type=submit].is-black.is-inverted:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.button.is-black.is-inverted:focus, button.is-black.is-inverted:focus, input[type=button].is-black.is-inverted:focus, input[type=submit].is-black.is-inverted:focus {
+  background-color: transparent;
+  color: #000000;
+  border-color: #000000;
 }
 
 .button.is-primary, button.is-primary, input[type=button].is-primary, input[type=submit].is-primary {
@@ -560,6 +597,24 @@ textarea {
   border-color: transparent;
 }
 
+.button.is-primary.is-inverted, button.is-primary.is-inverted, input[type=button].is-primary.is-inverted, input[type=submit].is-primary.is-inverted {
+  background-color: transparent;
+  border-color: #00aba9;
+  color: #00aba9;
+}
+
+.button.is-primary.is-inverted:hover, button.is-primary.is-inverted:hover, input[type=button].is-primary.is-inverted:hover, input[type=submit].is-primary.is-inverted:hover {
+  background-color: #00aba9;
+  color: #ffffff;
+  border-color: #00aba9;
+}
+
+.button.is-primary.is-inverted:focus, button.is-primary.is-inverted:focus, input[type=button].is-primary.is-inverted:focus, input[type=submit].is-primary.is-inverted:focus {
+  background-color: transparent;
+  color: #00aba9;
+  border-color: #00aba9;
+}
+
 .button.is-danger, button.is-danger, input[type=button].is-danger, input[type=submit].is-danger {
   background-color: #f44336;
   color: #ffffff;
@@ -582,6 +637,24 @@ textarea {
   background-color: #f32c1e;
   color: #ffffff;
   border-color: transparent;
+}
+
+.button.is-danger.is-inverted, button.is-danger.is-inverted, input[type=button].is-danger.is-inverted, input[type=submit].is-danger.is-inverted {
+  background-color: transparent;
+  border-color: #f44336;
+  color: #f44336;
+}
+
+.button.is-danger.is-inverted:hover, button.is-danger.is-inverted:hover, input[type=button].is-danger.is-inverted:hover, input[type=submit].is-danger.is-inverted:hover {
+  background-color: #f44336;
+  color: #ffffff;
+  border-color: #f44336;
+}
+
+.button.is-danger.is-inverted:focus, button.is-danger.is-inverted:focus, input[type=button].is-danger.is-inverted:focus, input[type=submit].is-danger.is-inverted:focus {
+  background-color: transparent;
+  color: #f44336;
+  border-color: #f44336;
 }
 
 .button.is-warning, button.is-warning, input[type=button].is-warning, input[type=submit].is-warning {
@@ -608,6 +681,24 @@ textarea {
   border-color: transparent;
 }
 
+.button.is-warning.is-inverted, button.is-warning.is-inverted, input[type=button].is-warning.is-inverted, input[type=submit].is-warning.is-inverted {
+  background-color: transparent;
+  border-color: #f0d147;
+  color: #f0d147;
+}
+
+.button.is-warning.is-inverted:hover, button.is-warning.is-inverted:hover, input[type=button].is-warning.is-inverted:hover, input[type=submit].is-warning.is-inverted:hover {
+  background-color: #f0d147;
+  color: #ffffff;
+  border-color: #f0d147;
+}
+
+.button.is-warning.is-inverted:focus, button.is-warning.is-inverted:focus, input[type=button].is-warning.is-inverted:focus, input[type=submit].is-warning.is-inverted:focus {
+  background-color: transparent;
+  color: #f0d147;
+  border-color: #f0d147;
+}
+
 .button.is-success, button.is-success, input[type=button].is-success, input[type=submit].is-success {
   background-color: #24ac41;
   color: #ffffff;
@@ -630,6 +721,24 @@ textarea {
   background-color: #209739;
   color: #ffffff;
   border-color: transparent;
+}
+
+.button.is-success.is-inverted, button.is-success.is-inverted, input[type=button].is-success.is-inverted, input[type=submit].is-success.is-inverted {
+  background-color: transparent;
+  border-color: #24ac41;
+  color: #24ac41;
+}
+
+.button.is-success.is-inverted:hover, button.is-success.is-inverted:hover, input[type=button].is-success.is-inverted:hover, input[type=submit].is-success.is-inverted:hover {
+  background-color: #24ac41;
+  color: #ffffff;
+  border-color: #24ac41;
+}
+
+.button.is-success.is-inverted:focus, button.is-success.is-inverted:focus, input[type=button].is-success.is-inverted:focus, input[type=submit].is-success.is-inverted:focus {
+  background-color: transparent;
+  color: #24ac41;
+  border-color: #24ac41;
 }
 
 .button.is-info, button.is-info, input[type=button].is-info, input[type=submit].is-info {
@@ -656,6 +765,24 @@ textarea {
   border-color: transparent;
 }
 
+.button.is-info.is-inverted, button.is-info.is-inverted, input[type=button].is-info.is-inverted, input[type=submit].is-info.is-inverted {
+  background-color: transparent;
+  border-color: #2277d8;
+  color: #2277d8;
+}
+
+.button.is-info.is-inverted:hover, button.is-info.is-inverted:hover, input[type=button].is-info.is-inverted:hover, input[type=submit].is-info.is-inverted:hover {
+  background-color: #2277d8;
+  color: #ffffff;
+  border-color: #2277d8;
+}
+
+.button.is-info.is-inverted:focus, button.is-info.is-inverted:focus, input[type=button].is-info.is-inverted:focus, input[type=submit].is-info.is-inverted:focus {
+  background-color: transparent;
+  color: #2277d8;
+  border-color: #2277d8;
+}
+
 .button.is-light, button.is-light, input[type=button].is-light, input[type=submit].is-light {
   background-color: #dfd7ce;
   color: #292828;
@@ -680,6 +807,24 @@ textarea {
   border-color: transparent;
 }
 
+.button.is-light.is-inverted, button.is-light.is-inverted, input[type=button].is-light.is-inverted, input[type=submit].is-light.is-inverted {
+  background-color: transparent;
+  border-color: #dfd7ce;
+  color: #dfd7ce;
+}
+
+.button.is-light.is-inverted:hover, button.is-light.is-inverted:hover, input[type=button].is-light.is-inverted:hover, input[type=submit].is-light.is-inverted:hover {
+  background-color: #dfd7ce;
+  color: #292828;
+  border-color: #dfd7ce;
+}
+
+.button.is-light.is-inverted:focus, button.is-light.is-inverted:focus, input[type=button].is-light.is-inverted:focus, input[type=submit].is-light.is-inverted:focus {
+  background-color: transparent;
+  color: #dfd7ce;
+  border-color: #dfd7ce;
+}
+
 .button.is-dark, button.is-dark, input[type=button].is-dark, input[type=submit].is-dark {
   background-color: #292828;
   color: #ffffff;
@@ -702,6 +847,24 @@ textarea {
   background-color: #1c1b1b;
   color: #ffffff;
   border-color: transparent;
+}
+
+.button.is-dark.is-inverted, button.is-dark.is-inverted, input[type=button].is-dark.is-inverted, input[type=submit].is-dark.is-inverted {
+  background-color: transparent;
+  border-color: #292828;
+  color: #292828;
+}
+
+.button.is-dark.is-inverted:hover, button.is-dark.is-inverted:hover, input[type=button].is-dark.is-inverted:hover, input[type=submit].is-dark.is-inverted:hover {
+  background-color: #292828;
+  color: #ffffff;
+  border-color: #292828;
+}
+
+.button.is-dark.is-inverted:focus, button.is-dark.is-inverted:focus, input[type=button].is-dark.is-inverted:focus, input[type=submit].is-dark.is-inverted:focus {
+  background-color: transparent;
+  color: #292828;
+  border-color: #292828;
 }
 
 .button.is-small, button.is-small, input[type=button].is-small, input[type=submit].is-small {

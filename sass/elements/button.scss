@@ -17,6 +17,7 @@ $button-border: $white-er;
   text-decoration: none;
   padding: 0.35em 0.75em;
   border-radius: $radius-small;
+  box-shadow: none;
   transition: all 0.3s ease 0s;
   
   &:hover,
@@ -35,10 +36,10 @@ $button-border: $white-er;
     background-color: $button-background-color;
     color: $black;
     border-color: $black;
+    box-shadow: 10px 10px 10px $bgcolor;
   }
 
-  @each $name,
-  $pair in $colorschemes {
+  @each $name, $pair in $colorschemes {
     $bgcolor: nth($pair, 1);
     $textcolor: nth($pair, 2);
     &.is-#{$name} {
@@ -56,18 +57,27 @@ $button-border: $white-er;
       }
       &:focus,
       &.is-focused {
-        background-color: $bgcolor;
-        color: $textcolor;
-        border-color: transparent;
+        box-shadow: 0px 0px 100px $bgcolor;
+        }
       }
       &:active,
       &.is-active {
-        background-color: darken($bgcolor, 5%);
+        background-color: darken($bgcolor, 100%);
         color: $textcolor;
         border-color: transparent;
       }
+      &.is-inverted {
+        background-color: transparent;
+        border-color: $bgcolor;
+        color:$bgcolor;
+        &:hover,&:focus {
+          background-color: $bgcolor;
+          color:$textcolor;
+          border-color: $bgcolor;
+        }
+      }
     }
-  }
+  
   &.is-small {
     border-radius: $radius-small;
     font-size: $size-small;
