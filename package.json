@@ -20,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/r-arvind/sleek/issues"
   },
-
   "devDependencies": {
     "autoprefixer": "^8.5.0",
     "clean-css-cli": "^4.1.11",
@@ -28,7 +27,6 @@
     "postcss-cli": "^5.0.0",
     "rimraf": "^2.6.2"
   },
-
   "scripts": {
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/sleek.css css/sleek.css",
     "build-cleancss": "cleancss -o css/sleek.min.css css/sleek.css",
@@ -36,9 +34,8 @@
     "build-sass": "node-sass --output-style expanded --source-map true sleek.scss css/sleek.css --watch",
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
     "deploy": "npm run build",
-    "start": "npm run build-sass" 
+    "start": "npm run build-sass"
   },
-  
   "files": [
     "css",
     "sass",
