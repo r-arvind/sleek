@@ -67,16 +67,19 @@ $weight-medium: 500 !default;
 $weight-bold: 600 !default;
 $weight-bolder: 700 !default;
 
-// BREAK POINTS FOR SCREEN
+// BREAK POINTS FOR SCREEN (these values are upper bound)
+
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  fhd: 1350px
+  'small': 576px,
+  'mobile': 768px,
+  'tablet': 992px,
+  'desktop': 1200px,
 ) !default;
 
+$small: 576px;
+$mobile: 768px;
+$tablet: 992px;
+$desktop: 1200px;
 
 // Miscellaneous
 

@@ -1,0 +1,55 @@
+@mixin from($device){
+    @media screen and (min-width : $device){
+        @content;
+    }
+}
+
+
+@mixin until($device){
+    @media screen and (max-width : $device){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media screen and (max-width : map-get($grid-breakpoints, 'mobile' )){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width : map-get($grid-breakpoints, 'mobile' )){
+        @content;
+    }
+}
+
+@mixin tablet-only{
+    @media screen and (min-width : map-get($grid-breakpoints, 'mobile' )) and (max-width : map-get($grid-breakpoints, 'tablet' )){
+        @content;
+    }
+}
+
+
+@mixin touch-devices{
+    @media screen and (max-width : map-get($grid-breakpoints, 'tablet' )){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width : map-get($grid-breakpoints, 'tablet' )){
+        @content;
+    }
+}
+
+@mixin desktop-only{
+    @media screen and (min-width : map-get($grid-breakpoints, 'tablet' )) and (max-width: map-get($grid-breakpoints, 'desktop' )){
+        @content;
+    }
+}
+
+@mixin widescreen{
+    @media screen and (min-width : map-get($grid-breakpoints, 'desktop' )){
+        @content;
+    }
+}

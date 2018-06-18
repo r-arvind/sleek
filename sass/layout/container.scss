@@ -1,0 +1,17 @@
+$margin-container : 64px;
+
+.container{
+    margin:0 auto;
+    position: relative;
+    @include block;
+
+    @include desktop{
+        max-width: $desktop - 2*$margin-container;
+        width: $desktop - 2*$margin-container;        
+    }
+
+    @include until($tablet){
+        margin-right:4px;
+        margin-left: 4px; 
+    }
+}

@@ -1,15 +1,16 @@
-.window{
+.panel{
     border : 1px solid darken($background, 15%);
-    margin: 10px;
+    margin: 7px;
+    @include block;
 
-    .head {
+    .panel-head {
         padding:10px;
         color: $text;
         background-color: darken($background, 15%);
     }
 
-    .body{
-        padding:10px;
+    .panel-body{
+        padding:15px 10px;
         background: $white;
     }
 
@@ -25,7 +26,7 @@
             border: 1px solid darken($bgcolor,10);
             color: $text;
 
-            .head{
+            .panel-head{
                 color: $text-color;
                 background-color: $bgcolor;
             }

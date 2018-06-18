@@ -1,0 +1,22 @@
+.notification{
+    @include block;
+    display: block;
+    margin:8px;
+    font-family: $family-sans-serif;
+    border: 1px solid darken($background,10%);
+    border-left: 5px solid $text;
+    background-color: $white;
+    border-radius: $radius-small;
+    padding:8px 16px;
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text-color:nth($pair,2);
+        &.is-#{$name} {
+            border-left: 5px solid $bgcolor;
+            color: $text;
+            >span,b,strong{
+                color: darken($bgcolor,5);
+            }
+        }
+    }
+}

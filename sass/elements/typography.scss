@@ -3,8 +3,13 @@
     h#{$i},.h#{$i} {
         font-size: nth($sizes, $i);
         font-family:'Open Sans', sans-serif ;
+//        font-family: $family-sans-serif;
         @include block;
         word-break: break-word;
+        font-weight: normal;
+        &.is-bold{
+            font-weight: bold; 
+        }
     }
 }
 

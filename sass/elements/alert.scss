@@ -1,6 +1,6 @@
 $alert-background: $background !default;
 $alert-radius: $radius-small !default;
-$alert-padding: 1.25rem 2.5rem 1.25rem 1.5rem !default;
+$alert-padding: 1.2rem 2rem 1.2rem 1.5rem !default;
 
 .alert{
     @include block;
