@@ -838,9 +838,8 @@ body {
 }
 
 .button.is-block, button.is-block, input[type=button].is-block, input[type=submit].is-block {
-  width: 90%;
-  margin: auto;
-  display: block;
+  width: 100%;
+  display: flex;
 }
 
 .alert {
@@ -1291,7 +1290,6 @@ a.dropdown-item.is-active {
 
 .panel {
   border: 1px solid #cccccc;
-  margin: 7px;
 }
 
 .panel:not(:last-child) {
@@ -1405,7 +1403,6 @@ a.dropdown-item.is-active {
 
 .notification {
   display: block;
-  margin: 8px;
   font-family: "Calibre", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   border: 1px solid #d9d9d9;
   border-left: 5px solid #161616;
@@ -1497,6 +1494,132 @@ a.dropdown-item.is-active {
 
 .notification.is-dark > span, .notification.is-dark b, .notification.is-dark strong {
   color: #1c1b1b;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.tooltip .button, .tooltip button {
+  margin: 0;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 120px;
+  background-color: #161616;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip */
+  transition: 0.4s;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #161616 transparent transparent transparent;
+}
+
+.tooltip.is-white .tooltip-text {
+  background-color: #ffffff;
+  color: #161616;
+}
+
+.tooltip.is-white .tooltip-text::after {
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.tooltip.is-black .tooltip-text {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.tooltip.is-black .tooltip-text::after {
+  border-color: #000000 transparent transparent transparent;
+}
+
+.tooltip.is-primary .tooltip-text {
+  background-color: #00aba9;
+  color: #ffffff;
+}
+
+.tooltip.is-primary .tooltip-text::after {
+  border-color: #00aba9 transparent transparent transparent;
+}
+
+.tooltip.is-danger .tooltip-text {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.tooltip.is-danger .tooltip-text::after {
+  border-color: #f44336 transparent transparent transparent;
+}
+
+.tooltip.is-warning .tooltip-text {
+  background-color: #f0d147;
+  color: #ffffff;
+}
+
+.tooltip.is-warning .tooltip-text::after {
+  border-color: #f0d147 transparent transparent transparent;
+}
+
+.tooltip.is-success .tooltip-text {
+  background-color: #24ac41;
+  color: #ffffff;
+}
+
+.tooltip.is-success .tooltip-text::after {
+  border-color: #24ac41 transparent transparent transparent;
+}
+
+.tooltip.is-info .tooltip-text {
+  background-color: #2277d8;
+  color: #ffffff;
+}
+
+.tooltip.is-info .tooltip-text::after {
+  border-color: #2277d8 transparent transparent transparent;
+}
+
+.tooltip.is-light .tooltip-text {
+  background-color: #dfd7ce;
+  color: #292828;
+}
+
+.tooltip.is-light .tooltip-text::after {
+  border-color: #dfd7ce transparent transparent transparent;
+}
+
+.tooltip.is-dark .tooltip-text {
+  background-color: #292828;
+  color: #ffffff;
+}
+
+.tooltip.is-dark .tooltip-text::after {
+  border-color: #292828 transparent transparent transparent;
 }
 
 .container {

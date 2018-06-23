@@ -93,8 +93,7 @@ $button-border: $white-er;
     border-radius: $radius-rounded;
   }
   &.is-block{
-    width:90%;
-    margin:auto;
-    display: block;
+    width:100%;
+    display: flex;
   }
 }
