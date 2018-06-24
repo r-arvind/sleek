@@ -1,0 +1,62 @@
+.card{
+    display: block;
+    width:100%;
+    max-width: 520px;
+    color: $text;
+    border: 1px solid darken($white-er,10);
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    background: $background;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover{
+        box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .card-image{
+        display: flex;
+        justify-content: center;
+        img{
+        display: block;
+        position: relative;
+        width: 100%;
+        }
+        &.is-small{
+            img{
+                width:50%;
+            }
+        }
+        &.is-medium{
+            img{
+                width:70%;
+            }
+        }
+        &.is-large{
+            img{
+                width:90%;
+            }
+        }
+    }
+
+    .card-content{
+        padding: 1.5rem;
+        background-color: $background;
+        &.is-centered{
+            text-align: center;
+        }
+    }
+
+    &.is-transparent{
+        background-color: transparent;
+        border: transparent;
+        box-shadow:none;
+        color: white;
+        &:hover{
+            border: transparent;
+            box-shadow: none;
+        }
+        .card-content{
+            background: transparent;
+        }
+    }
+
+}

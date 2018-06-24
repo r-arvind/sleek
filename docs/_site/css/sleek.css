@@ -901,12 +901,8 @@ body {
 h1, .h1 {
   font-size: 3rem;
   font-family: 'Open Sans', sans-serif;
-  word-break: break-word;
   font-weight: normal;
-}
-
-h1:not(:last-child), .h1:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin: 10px 0px;
 }
 
 h1.is-bold, .h1.is-bold {
@@ -916,12 +912,8 @@ h1.is-bold, .h1.is-bold {
 h2, .h2 {
   font-size: 2.5rem;
   font-family: 'Open Sans', sans-serif;
-  word-break: break-word;
   font-weight: normal;
-}
-
-h2:not(:last-child), .h2:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin: 10px 0px;
 }
 
 h2.is-bold, .h2.is-bold {
@@ -931,12 +923,8 @@ h2.is-bold, .h2.is-bold {
 h3, .h3 {
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
-  word-break: break-word;
   font-weight: normal;
-}
-
-h3:not(:last-child), .h3:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin: 10px 0px;
 }
 
 h3.is-bold, .h3.is-bold {
@@ -946,12 +934,8 @@ h3.is-bold, .h3.is-bold {
 h4, .h4 {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
-  word-break: break-word;
   font-weight: normal;
-}
-
-h4:not(:last-child), .h4:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin: 10px 0px;
 }
 
 h4.is-bold, .h4.is-bold {
@@ -961,12 +945,8 @@ h4.is-bold, .h4.is-bold {
 h5, .h5 {
   font-size: 1.25rem;
   font-family: 'Open Sans', sans-serif;
-  word-break: break-word;
   font-weight: normal;
-}
-
-h5:not(:last-child), .h5:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin: 10px 0px;
 }
 
 h5.is-bold, .h5.is-bold {
@@ -976,20 +956,12 @@ h5.is-bold, .h5.is-bold {
 h6, .h6 {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
-  word-break: break-word;
   font-weight: normal;
-}
-
-h6:not(:last-child), .h6:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin: 10px 0px;
 }
 
 h6.is-bold, .h6.is-bold {
   font-weight: bold;
-}
-
-.text:not(:last-child) {
-  margin-bottom: 1.5rem;
 }
 
 .badge:not(body) {
@@ -1622,6 +1594,71 @@ a.dropdown-item.is-active {
   border-color: #292828 transparent transparent transparent;
 }
 
+.card {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  color: #161616;
+  border: 1px solid #cbbeaf;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #f2f2f2;
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image {
+  display: flex;
+  justify-content: center;
+}
+
+.card .card-image img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.card .card-image.is-small img {
+  width: 50%;
+}
+
+.card .card-image.is-medium img {
+  width: 70%;
+}
+
+.card .card-image.is-large img {
+  width: 90%;
+}
+
+.card .card-content {
+  padding: 1.5rem;
+  background-color: #f2f2f2;
+}
+
+.card .card-content.is-centered {
+  text-align: center;
+}
+
+.card.is-transparent {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  color: white;
+}
+
+.card.is-transparent:hover {
+  border: transparent;
+  box-shadow: none;
+}
+
+.card.is-transparent .card-content {
+  background: transparent;
+}
+
 .container {
   margin: 0 auto;
   position: relative;
@@ -1755,10 +1792,6 @@ a.dropdown-item.is-active {
   flex-shrink: 1;
 }
 
-.hero.is-centered {
-  justify-content: center;
-}
-
 header, .hero-head {
   display: block;
   flex-grow: 0;
@@ -1775,6 +1808,57 @@ footer, .hero-foot {
   flex-grow: 1;
   flex-shrink: 0;
   padding: 3rem 1.5rem;
+}
+
+.columns {
+  display: flex;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+  margin-top: -0.75em;
+}
+
+.columns:last-child {
+  margin-bottom: 0.75em;
+}
+
+.columns:not(:last-child) {
+  margin-bottom: -0.75em;
+}
+
+.columns.is-centered {
+  justify-content: center;
+}
+
+.columns.is-gapless {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.columns.is-gapless > .column {
+  margin: 0;
+  padding: 0;
+}
+
+.columns.is-gapless:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.columns.is-gapless:last-child {
+  margin-bottom: 0;
+}
+
+.columns.is-multiline {
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 1 0;
+  padding: 0.75em;
+}
+
+.column:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=sleek.css.map */
