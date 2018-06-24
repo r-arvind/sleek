@@ -10,8 +10,32 @@ $margin-container : 64px;
         width: $desktop - 2*$margin-container;        
     }
 
+    &.is-small{
+        @include desktop{
+            max-width: $desktop - 4.5*$margin-container;
+            width: $desktop - 4.5*$margin-container;        
+        }
+    }
+
+    &.is-medium{
+        @include desktop{
+            max-width: $desktop - 2*$margin-container;
+            width: $desktop - 2*$margin-container;        
+        }
+    }
+    &.is-large{
+        @include desktop{
+            max-width: $desktop - 1*$margin-container;
+            width: $desktop - 1*$margin-container;        
+        }
+    }
+
     @include until($tablet){
         margin-right:4px;
         margin-left: 4px; 
     }
+    &.is-centered{
+        text-align: center;
+    }
+
 }
