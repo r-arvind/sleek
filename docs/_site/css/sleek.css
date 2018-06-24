@@ -1812,6 +1812,7 @@ footer, .hero-foot {
 
 .columns {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -0.75em;
   margin-right: -0.75em;
   margin-top: -0.75em;
@@ -1848,8 +1849,8 @@ footer, .hero-foot {
   margin-bottom: 0;
 }
 
-.columns.is-multiline {
-  flex-wrap: wrap;
+.columns.is-flexible {
+  flex-wrap: nowrap;
 }
 
 .column {
