@@ -2075,6 +2075,12 @@ footer, .hero-foot {
   flex-wrap: nowrap;
 }
 
+@media screen and (min-width: 768px) {
+  .columns {
+    display: flex;
+  }
+}
+
 .column {
   display: block;
   flex-basis: 0;

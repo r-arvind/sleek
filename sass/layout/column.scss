@@ -30,6 +30,10 @@
     &.is-flexible{
         flex-wrap: nowrap;
     }
+
+    @include tablet{
+        display: flex;
+    }
 }
 
 .column{

@@ -2035,9 +2035,6 @@ footer, .hero-foot {
 }
 
 .columns {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
   margin-left: -0.75em;
   margin-right: -0.75em;
   margin-top: -0.75em;
@@ -2078,21 +2075,18 @@ footer, .hero-foot {
   flex-wrap: nowrap;
 }
 
+@media screen and (min-width: 768px) {
+  .columns {
+    display: flex;
+  }
+}
+
 .column {
+  display: block;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
   padding: 0.75em;
-}
-
-.column:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .column {
-    flex-basis: auto;
-  }
 }
 
 /*# sourceMappingURL=sleek.css.map */
