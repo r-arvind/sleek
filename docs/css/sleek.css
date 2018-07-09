@@ -1597,7 +1597,6 @@ a.dropdown-item.is-active {
 .card {
   display: block;
   width: 100%;
-  max-width: 520px;
   color: #161616;
   border: 1px solid #cbbeaf;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1871,6 +1870,158 @@ a.dropdown-item.is-active {
   .navbar.is-dark .navbar-start > .navbar-item, .navbar.is-dark .navbar-start .navbar-link, .navbar.is-dark .navbar-end > .navbar-item, .navbar.is-dark .navbar-end .navbar-link {
     color: #ffffff;
   }
+}
+
+.progress {
+  display: block;
+  appearance: none;
+  border: none;
+  border-radius: 4px;
+  height: 1rem;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  margin: 1px;
+}
+
+.progress::-webkit-progress-bar {
+  background-color: #f2f2f2;
+}
+
+.progress::-webkit-progress-value {
+  background-color: #161616;
+}
+
+.progress::-moz-progress-bar {
+  background-color: #161616;
+}
+
+.progress::-ms-fill {
+  background-color: #161616;
+}
+
+.progress.is-white::-webkit-progress-value {
+  background-color: #ffffff;
+}
+
+.progress.is-white::-moz-progress-bar {
+  background-color: #ffffff;
+}
+
+.progress.is-white::-ms-fill {
+  background-color: #ffffff;
+}
+
+.progress.is-black::-webkit-progress-value {
+  background-color: #000000;
+}
+
+.progress.is-black::-moz-progress-bar {
+  background-color: #000000;
+}
+
+.progress.is-black::-ms-fill {
+  background-color: #000000;
+}
+
+.progress.is-primary::-webkit-progress-value {
+  background-color: #00aba9;
+}
+
+.progress.is-primary::-moz-progress-bar {
+  background-color: #00aba9;
+}
+
+.progress.is-primary::-ms-fill {
+  background-color: #00aba9;
+}
+
+.progress.is-danger::-webkit-progress-value {
+  background-color: #f44336;
+}
+
+.progress.is-danger::-moz-progress-bar {
+  background-color: #f44336;
+}
+
+.progress.is-danger::-ms-fill {
+  background-color: #f44336;
+}
+
+.progress.is-warning::-webkit-progress-value {
+  background-color: #f0d147;
+}
+
+.progress.is-warning::-moz-progress-bar {
+  background-color: #f0d147;
+}
+
+.progress.is-warning::-ms-fill {
+  background-color: #f0d147;
+}
+
+.progress.is-success::-webkit-progress-value {
+  background-color: #24ac41;
+}
+
+.progress.is-success::-moz-progress-bar {
+  background-color: #24ac41;
+}
+
+.progress.is-success::-ms-fill {
+  background-color: #24ac41;
+}
+
+.progress.is-info::-webkit-progress-value {
+  background-color: #2277d8;
+}
+
+.progress.is-info::-moz-progress-bar {
+  background-color: #2277d8;
+}
+
+.progress.is-info::-ms-fill {
+  background-color: #2277d8;
+}
+
+.progress.is-light::-webkit-progress-value {
+  background-color: #dfd7ce;
+}
+
+.progress.is-light::-moz-progress-bar {
+  background-color: #dfd7ce;
+}
+
+.progress.is-light::-ms-fill {
+  background-color: #dfd7ce;
+}
+
+.progress.is-dark::-webkit-progress-value {
+  background-color: #292828;
+}
+
+.progress.is-dark::-moz-progress-bar {
+  background-color: #292828;
+}
+
+.progress.is-dark::-ms-fill {
+  background-color: #292828;
+}
+
+.progress.is-small {
+  height: 0.75rem;
+}
+
+.progress.is-medium {
+  height: 1.25rem;
+}
+
+.progress.is-large {
+  height: 1.5rem;
+}
+
+.progress.is-rounded {
+  border-radius: 290486px;
 }
 
 .container {

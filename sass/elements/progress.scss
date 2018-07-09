@@ -1,0 +1,52 @@
+.progress{
+    display: block;
+    appearance: none;
+    border: none;
+    border-radius: $radius;
+    height: $size-normal;
+    overflow: hidden;
+    padding: 0;
+    width:100%;
+    margin:1px;
+
+    &::-webkit-progress-bar{
+        background-color: $background;
+    }
+    &::-webkit-progress-value{
+        background-color: $text;
+    }
+    &::-moz-progress-bar{
+        background-color: $text;
+    }
+    &::-ms-fill{
+        background-color: $text;
+    }
+
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text-color:nth($pair,2);
+        &.is-#{$name} {
+            &::-webkit-progress-value{
+                background-color: $bgcolor;
+            }
+            &::-moz-progress-bar{
+                background-color: $bgcolor;
+            }
+            &::-ms-fill{
+                background-color: $bgcolor;
+            }
+        }
+    }
+    &.is-small{
+        height: $size-small;
+    }
+    &.is-medium{
+        height: $size-medium;
+    }
+    &.is-large{
+        height: $size-large;
+    }
+    &.is-rounded{
+        border-radius: $radius-rounded;
+    }
+}
