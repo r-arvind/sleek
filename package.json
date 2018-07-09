@@ -35,7 +35,7 @@
     "build-sass-docs": "node-sass --output-style expanded --source-map true sleek.scss docs/css/sleek.css --watch",
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
     "deploy": "npm run build",
-    "start": " npm run build-sass-docs && npm run build-sass"
+    "start": "npm run build-sass"
   },
   "files": [
     "css",

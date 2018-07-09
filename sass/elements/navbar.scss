@@ -1,0 +1,38 @@
+.navbar{
+    background-color: $background;
+    min-height: 3.25rem;
+    position: relative;
+    z-index:50;
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text-color:nth($pair,2);
+        &.is-#{$name} {
+            background-color: $bgcolor;
+            color: $text-color;
+            .navbar-brand{
+                & > .navbar-item , .navbar-link{
+                    color: $text-color;
+                }
+                & > a.navbar-item, .navbar-link{
+                    &:hover,&.is-active{
+                        background-color: darken($bgcolor, 10%);
+                    }
+                }
+
+                .navbar-link{
+                    &::after{
+                        border-color: $text-color;
+                    }
+                }
+            }
+
+            @include desktop{
+                .navbar-start,.navbar-end{
+                    & > .navbar-item,.navbar-link{
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}
