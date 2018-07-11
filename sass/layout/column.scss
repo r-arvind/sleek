@@ -3,10 +3,10 @@
     margin-right: -0.75em;
     margin-top: -0.75em;
     &:last-child{
-        margin-bottom: 0.75em;
+        margin-bottom: -0.75em;
     }    
     &:not(:last-child){
-        margin-bottom: -0.75em;
+        margin-bottom: 0.75em;
     }
 
     &.is-centered{
@@ -30,10 +30,19 @@
     &.is-multiline{
         flex-wrap: wrap;
     }
+    &.is-mobile{
+        display: flex;
+    }
 
     @include tablet{
         display: flex;
     }
+    @include desktop{
+        &.is-desktop{
+            display: flex;
+        }
+    }
+
 }
 
 .column{
@@ -41,15 +50,6 @@
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 1;
-    @for $i from 1 through 12{
-    .columns > &.is-#{$i} {
-        flex: none;
-        width: percentage($i / 12);
-        }
-    .columns > &.is-offset-#{$i} {
-        margin-left: percentage($i / 12);
-        }
-    }
     padding: 0.75em;
 
 }
