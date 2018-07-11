@@ -1632,6 +1632,21 @@ a.dropdown-item.is-active {
   width: 100%;
 }
 
+.card-image.is-small {
+  max-width: 60%;
+  align-self: center;
+}
+
+.card-image.is-medium {
+  width: 75%;
+  align-self: center;
+}
+
+.card-image.is-large {
+  width: 90%;
+  align-self: center;
+}
+
 .card-content {
   padding: 1.5rem;
   background-color: #f2f2f2;
