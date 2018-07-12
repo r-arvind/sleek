@@ -1,8 +1,32 @@
-.navbar{
+/*.navbar{
     background-color: $background;
     min-height: 3.25rem;
     position: relative;
     z-index:50;
+
+    & > .container{
+    align-items: stretch;
+    display: flex;
+    min-height: 3.25rem;
+    width: 100%;
+    }
+
+    &.has-shadow{
+        box-shadow: 0 2px 3px rgba($black, 0.1);
+    }
+
+    &.is-fixed{
+        left: 0;
+        position: fixed;
+        right: 0;
+        z-index: 50;
+        top:0;
+
+        html,body{
+            padding-top: 3.25rem;
+        }
+    }
+
     @each $name, $pair in $colorschemes {
         $bgcolor: nth($pair,1);
         $text-color:nth($pair,2);
@@ -10,29 +34,120 @@
             background-color: $bgcolor;
             color: $text-color;
             .navbar-brand{
-                & > .navbar-item , .navbar-link{
+                & > .navbar-item{
                     color: $text-color;
                 }
-                & > a.navbar-item, .navbar-link{
+                & > a.navbar-item{
                     &:hover,&.is-active{
-                        background-color: darken($bgcolor, 10%);
-                    }
-                }
-
-                .navbar-link{
-                    &::after{
-                        border-color: $text-color;
+                        background-color: darken($bgcolor, 15%);
                     }
                 }
             }
-
             @include desktop{
-                .navbar-start,.navbar-end{
-                    & > .navbar-item,.navbar-link{
+                .navbar-left,.navbar-right{
+                    & > .navbar-item{
                         color: $text-color;
+                    }
+
+                    & > a.navbar-item{
+                        &:hover,&.is-active{
+                            background-color: darken($bgcolor, 15%);
+                        }
                     }
                 }
             }
         }
     }
 }
+
+
+.navbar-brand{
+    align-items: stretch;
+    display: flex;
+    min-height: 3.25rem;
+    flex-shrink: 0;
+    a.navbar-item{
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+
+.navbar-menu{
+    display: none;
+}
+
+.navbar-item{
+    color: $text;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+}
+
+a.navbar-item{
+    cursor: pointer;
+    &:hover{
+        background-color: darken($background, 20%);
+    }
+}
+
+@include touch-devices{
+    
+    .navbar > .container{
+        display: block;
+    }
+
+    .navbar-brand{
+        .navbar-item{
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    .navbar-menu{
+        background-color: $background;
+        box-shadow: 0 8px 16px rgba(0,0,0, 0.1);
+        padding: 0.5rem 0;
+        &.is-active{
+            display: block;
+        }
+    }
+
+    .navbar{
+        &.is-fixed{
+            .navbar-menu{
+                -webkit-overflow-scrolling: touch;
+                max-height: calc(100vh - 3.25rem);
+                overflow: auto;
+            }
+        }
+    }
+}
+
+@include desktop{
+    .navbar,.navbar-menu,.navbar-left,.navbar-right{
+        display: flex;
+        align-items: stretch;
+    }
+    .navbar-burger{
+        display: none;
+    }
+    .navbar-item{
+        display: flex;
+        align-items: center;
+    }
+    .navbar-menu{
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    .navbar-left{
+        justify-content: flex-start;
+    }
+    .navbar-right{
+        justify-content: flex-end;
+    }
+}*/
+
