@@ -8,6 +8,15 @@ html{
     text-size-adjust: 100%; 
 }
 
+a{
+  color: hsl(217, 71%,  53%);
+  cursor: pointer;
+  text-decoration: none;
+  &:hover{
+    color: $grey;
+  }
+}
+
 article,aside,figure,footer,header,hgroup,section{
     display: block;
 }
