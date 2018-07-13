@@ -1,0 +1,19 @@
+$alert-background: $background !default;
+$alert-radius: $radius-small !default;
+$alert-padding: 1.2rem 2rem 1.2rem 1.5rem !default;
+
+.alert{
+    @include block;
+    background-color: $alert-background;
+    border-radius: $alert-radius;
+    padding: $alert-padding;
+    position: relative;
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text:nth($pair,2);
+        &.is-#{$name} {
+            background-color: $bgcolor;
+            color: $text;
+        }
+    }
+}

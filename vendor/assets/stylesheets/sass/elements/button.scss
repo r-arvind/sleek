@@ -1,0 +1,99 @@
+$button-color: $grey-er;
+$button-background-color: $white;
+$button-border: $white-er;
+
+.button, button, input[type=button], input[type=submit] {
+  @include button-control-flex;
+  @include unselectable;
+  background-color: $button-background-color;
+  color: $button-color;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid $button-border;
+  text-decoration: none;
+  padding: 0.35em 0.75em;
+  border-radius: $radius-small;
+  box-shadow: none;
+  transition: all 0.3s ease 0s;
+  
+  &:hover,
+  &.is-hovered {
+    background-color: $button-background-color;
+    color: $black;
+    border-color: $white-ish;
+  }
+  &:focus,
+  &.is-focused {
+    background-color: $button-background-color;
+    color: $black;
+  }
+  &:active,
+  &.is-active {
+    background-color: $button-background-color;
+    color: $black;
+    border-color: $black;
+    box-shadow: 0px 0px 5px $grey-er;
+  }
+
+  @each $name, $pair in $colorschemes {
+    $bgcolor: nth($pair, 1);
+    $text-color: nth($pair, 2);
+    &.is-#{$name} {
+      background-color: $bgcolor;
+      color: $text-color;
+      border-color: transparent;
+      @if($name=='white') {
+        border: 1px solid $button-border;
+      }
+      &:hover,
+      &.is-hovered {
+        background-color: darken($bgcolor, 5%);
+        color: $text-color;
+        border-color: transparent;
+      }
+      &:focus,
+      &.is-focused {
+        box-shadow: 0px 0px 5px $bgcolor;
+        }
+
+      &:active,
+      &.is-active {
+        background-color: darken($bgcolor, 100%);
+        color: $text-color;
+        border-color: transparent;
+      }
+      &.is-inverted {
+        background-color: transparent;
+        border-color: $bgcolor;
+        color:$bgcolor;
+        &:hover,&:focus {
+          background-color: $bgcolor;
+          color:$text-color;
+          border-color: $bgcolor;
+        }
+      }
+    }
+  }
+  
+  &.is-small {
+    border-radius: $radius-small;
+    font-size: $size-small;
+  }
+  &.is-medium {
+    font-size: $size-medium;
+  }
+  &.is-large {
+    font-size: $size-large;
+  }
+  &.is-rounded{
+    border-radius: $radius-rounded;
+  }
+  &.is-block{
+    width:100%;
+    display: flex;
+  }
+}

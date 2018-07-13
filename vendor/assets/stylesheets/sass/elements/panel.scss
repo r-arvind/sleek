@@ -1,0 +1,34 @@
+.panel{
+    border : 1px solid darken($background, 15%);
+    @include block;
+
+    .panel-head {
+        padding:10px;
+        color: $text;
+        background-color: darken($background, 15%);
+    }
+
+    .panel-body{
+        padding:15px 10px;
+        background: $white;
+    }
+
+    p{
+        margin:0;
+    }
+
+
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text-color:nth($pair,2);
+        &.is-#{$name} {
+            border: 1px solid darken($bgcolor,10);
+            color: $text;
+
+            .panel-head{
+                color: $text-color;
+                background-color: $bgcolor;
+            }
+        }
+    }
+}

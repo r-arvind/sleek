@@ -1,0 +1,79 @@
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text:nth($pair,2);
+        &.is-#{$name} {
+            background-color: $bgcolor;
+            color: $text;
+        }
+    }
+
+    &.is-small{
+        .hero-body{
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        } 
+    }
+    &.is-medium{
+        @include tablet{
+            .hero-body{
+                padding-bottom: 9rem;
+                padding-top: 9rem;
+            }
+        }       
+    }
+
+    &.is-large{
+        @include tablet{
+            .hero-body{
+                padding-bottom: 18rem;
+                padding-top: 18rem;
+            }
+        }       
+    }
+
+    &.is-fullheight{
+        min-height: 100vh;
+        .hero-body{
+            align-items: center;
+            display: flex;
+            &>.container{
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+        }
+    }
+
+    &.has-image-parallax{
+        background-size : cover;
+        background-attachment : fixed; 
+        background-repeat : no-repeat;
+    }
+}
+
+header,.hero-head{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+footer,.hero-foot{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.hero-body{
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem;
+    &.is-centered{
+        justify-content: center;
+    }
+}

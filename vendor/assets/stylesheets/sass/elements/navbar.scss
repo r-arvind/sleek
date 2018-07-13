@@ -1,0 +1,143 @@
+.navbar{
+    background-color: $background;
+    min-height: 3.75rem;
+    position: relative;
+    z-index:50;
+
+    & > .container{
+    align-items: stretch;
+    display: flex;
+    min-height: 3.75rem;
+    width: 100%;
+    }
+
+    &.has-shadow{
+        box-shadow: 0 2px 3px rgba($black, 0.1);
+    }
+
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text-color:nth($pair,2);
+        &.is-#{$name} {
+            background-color: $bgcolor;
+            color: $text-color;
+            .navbar-item{
+                color: $text-color;
+            }
+            a.navbar-item, .navbar-link{
+                &:hover,&.is-active{
+                    background-color: darken($bgcolor, 15%);
+                }
+            }
+            .navbar-left,.navbar-right{
+                & > .navbar-item{
+                    color: $text-color;
+                }
+
+                & > a.navbar-item, .navbar-link{
+                    &:hover,&.is-active{
+                        background-color: darken($bgcolor, 15%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.navbar-brand{
+    align-items: stretch;
+    display: flex;
+    min-height: 3.75rem;
+    flex-shrink: 0;
+    a.navbar-item, .navbar-link{
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+
+.navbar-menu{
+    display: none;
+}
+.navbar-burger{
+    margin-left: auto;
+}
+.navbar-item{
+    color: $text;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+
+    img{
+        max-height: 1.75rem;
+    }
+}
+
+a.navbar-item, .navbar-link{
+    cursor: pointer;
+    &:hover{
+        background-color: darken($background, 20%);
+    }
+}
+
+@include touch-devices{
+    
+    .navbar > .container{
+        display: block;
+    }
+
+    .navbar-brand{
+        .navbar-item{
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    .navbar-menu{
+        background-color: $background;
+        box-shadow: 0 8px 16px rgba(0,0,0, 0.1);
+        padding: 0.5rem 0;
+        &.is-active{
+            display: block;
+        }
+    }
+
+    .navbar{
+        &.is-fixed{
+            .navbar-menu{
+                -webkit-overflow-scrolling: touch;
+                max-height: calc(100vh - 3.25rem);
+                overflow: auto;
+            }
+        }
+    }
+}
+
+@include desktop{
+    .navbar,.navbar-menu,.navbar-left,.navbar-right{
+        display: flex;
+        align-items: stretch;
+    }
+    .navbar-burger{
+        display: none;
+    }
+    .navbar-item{
+        display: flex;
+        align-items: center;
+    }
+    .navbar-menu{
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    .navbar-left{
+        justify-content: flex-start;
+    }
+    .navbar-right{
+        justify-content: flex-end;
+    }
+}

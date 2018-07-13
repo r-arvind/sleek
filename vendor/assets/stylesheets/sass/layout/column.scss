@@ -1,0 +1,55 @@
+.columns{
+    margin-left: -0.75em;
+    margin-right: -0.75em;
+    margin-top: -0.75em;
+    &:last-child{
+        margin-bottom: -0.75em;
+    }    
+    &:not(:last-child){
+        margin-bottom: 0.75em;
+    }
+
+    &.is-centered{
+        justify-content: center;
+    }
+    &.is-gapless{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        & > .column{
+            margin: 0;
+            padding: 0;
+        }
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &.is-multiline{
+        flex-wrap: wrap;
+    }
+    &.is-mobile{
+        display: flex;
+    }
+
+    @include tablet{
+        display: flex;
+    }
+    @include desktop{
+        &.is-desktop{
+            display: flex;
+        }
+    }
+
+}
+
+.column{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75em;
+
+}
