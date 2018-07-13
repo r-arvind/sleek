@@ -1,5 +1,5 @@
 .navbar{
-    background-color: $background;
+    background-color: $white;
     min-height: 3.75rem;
     position: relative;
     z-index:50;
@@ -21,25 +21,29 @@
         &.is-#{$name} {
             background-color: $bgcolor;
             color: $text-color;
-            .navbar-item{
+            .navbar-brand, .navbar-burger{                
+                & > .navbar-item{
                 color: $text-color;
-            }
-            a.navbar-item, .navbar-link{
+                }
+            
+            & > a.navbar-item, .navbar-link{
                 &:hover,&.is-active{
                     background-color: darken($bgcolor, 15%);
                 }
-            }
+            }}
+            @include desktop{
             .navbar-left,.navbar-right{
                 & > .navbar-item{
                     color: $text-color;
                 }
 
-                & > a.navbar-item, .navbar-link{
+                & > a.navbar-item{
                     &:hover,&.is-active{
                         background-color: darken($bgcolor, 15%);
                     }
                 }
             }
+        }
         }
     }
 }
@@ -60,7 +64,6 @@
 
 .navbar-menu{
     display: none;
-
 }
 .navbar-burger{
     margin-left: auto;
@@ -89,8 +92,9 @@
 
 a.navbar-item, .navbar-link{
     cursor: pointer;
-    &:hover{
-        background-color: darken($background, 20%);
+    &:hover, &.is-active{
+        background-color: $white-ish;
+        color: $info;
     }
 }
 
@@ -109,21 +113,12 @@ a.navbar-item, .navbar-link{
 
     .navbar-menu{
         background-color: $background;
-        color: $text;
         box-shadow: 0 8px 16px rgba(0,0,0, 0.1);
         padding: 0.5rem 0;
+        color: black;
+
         &.is-active{
             display: block;
-        }
-    }
-
-    .navbar{
-        &.is-fixed{
-            .navbar-menu{
-                -webkit-overflow-scrolling: touch;
-                max-height: calc(100vh - 3.25rem);
-                overflow: auto;
-            }
         }
     }
 }
@@ -146,8 +141,10 @@ a.navbar-item, .navbar-link{
     }
     .navbar-left{
         justify-content: flex-start;
+        margin-right: auto;
     }
     .navbar-right{
         justify-content: flex-end;
+        margin-left: auto;
     }
 }
