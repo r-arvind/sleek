@@ -16,23 +16,26 @@
             border: 1px solid rgb(114, 114, 255);
         }
     </style>
+    <script src="sidebar.js"></script>
 </head>
 
 <body>
 
     <div class="navbar is-danger">
         <div class="navbar-brand">
-            <div class="navbar-item">
+            <div class="navbar-item is-title">
                 SLEEK
             </div>
-            <div class="navbar-burger">
+            <a href="" class="navbar-item">brand-item1</a>
+            <div class="navbar-burger" data-target="hidden-content">
                 <div class="navbar-item">burger</div>
             </div>
         </div>
-
-        <div class="navbar-menu">
+        <a class="navbar-item">Item1</a>
+        <div id="hidden-content" class="navbar-menu">
             <div class="navbar-item">Desktop-visible</div>
         </div>
+
 
 
     </div>

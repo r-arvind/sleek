@@ -910,7 +910,6 @@ body {
 
 h1, .h1 {
   font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -921,7 +920,6 @@ h1.is-bold, .h1.is-bold {
 
 h2, .h2 {
   font-size: 2.5rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -932,7 +930,6 @@ h2.is-bold, .h2.is-bold {
 
 h3, .h3 {
   font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -943,7 +940,6 @@ h3.is-bold, .h3.is-bold {
 
 h4, .h4 {
   font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -954,7 +950,6 @@ h4.is-bold, .h4.is-bold {
 
 h5, .h5 {
   font-size: 1.25rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -965,7 +960,6 @@ h5.is-bold, .h5.is-bold {
 
 h6, .h6 {
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -1929,6 +1923,7 @@ a.dropdown-item.is-active {
 
 .navbar-burger {
   margin-left: auto;
+  cursor: pointer;
 }
 
 .navbar-item {
@@ -1943,6 +1938,13 @@ a.dropdown-item.is-active {
 
 .navbar-item img {
   max-height: 1.75rem;
+}
+
+.navbar-item.is-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Gotham SSm A","Gotham SSm B",Montserrat,Helvetica,sans-serif;
+  text-decoration: none;
 }
 
 a.navbar-item, .navbar-link {
@@ -1963,6 +1965,7 @@ a.navbar-item:hover, .navbar-link:hover {
   }
   .navbar-menu {
     background-color: #f2f2f2;
+    color: #161616;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     padding: 0.5rem 0;
   }

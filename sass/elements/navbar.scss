@@ -60,9 +60,11 @@
 
 .navbar-menu{
     display: none;
+
 }
 .navbar-burger{
     margin-left: auto;
+    cursor: pointer;
 }
 .navbar-item{
     color: $text;
@@ -75,6 +77,13 @@
 
     img{
         max-height: 1.75rem;
+    }
+
+    &.is-title{
+        font-size: 1.5rem;
+        font-weight: bold; 
+        font-family: "Gotham SSm A","Gotham SSm B",Montserrat,Helvetica,sans-serif;
+        text-decoration: none;
     }
 }
 
@@ -100,6 +109,7 @@ a.navbar-item, .navbar-link{
 
     .navbar-menu{
         background-color: $background;
+        color: $text;
         box-shadow: 0 8px 16px rgba(0,0,0, 0.1);
         padding: 0.5rem 0;
         &.is-active{

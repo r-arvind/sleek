@@ -7,25 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bulma.css">
     <title>Bulma-samples</title>
+    <script src="sidebar.js"></script>
 </head>
 
 <body>
-    <div class="navbar is-dark">
-        <div class="navbar-brand">
-            <div class="navbar-item">
-                SLEEK
-            </div>
-            <div class="navbar-burger">
-                
-            </div>
-        </div>
-
-        <div class="navbar-menu">
-            <div class="navbar-item">Desktop-visible</div>
-        </div>
-
-
-    </div>
+    <div class="navbar is-light">
+            <div class="navbar-brand">
+                    <div class="navbar-item">
+                        SLEEK
+                    </div>
+                    <div class="navbar-burger" data-target="hidden-content">
+                        <div class="navbar-item">burger</div>
+                    </div>
+                </div>
+                <a class="navbar-item">Item1</a>
+                <div id="hidden-content" class="navbar-menu">
+                    <div class="navbar-item">Desktop-visible</div>
+                </div>
+                </div>
     <p class="title is-1">Class Heading 1</p>
     <div class="dropdown is-hoverable">
         <button class="button">Hover</button>
