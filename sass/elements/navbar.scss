@@ -67,6 +67,10 @@
 }
 .navbar-burger{
     margin-left: auto;
+    align-items: stretch;
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     cursor: pointer;
 }
 .navbar-item{
@@ -77,6 +81,18 @@
     line-height: 1.5;
     padding: 0.5rem 0.75rem;
     position: relative;
+
+    &.is-hidden-desktop{
+        @include desktop{
+            display: none;
+        }
+    }
+
+    &.is-hidden-touch{
+        @include touch-devices{
+            display: none;
+        }
+    }
 
     img{
         max-height: 1.75rem;

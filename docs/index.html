@@ -10,11 +10,21 @@ title : Sleek
                 <div class="container is-large">
                     <div class="navbar-brand">
                         <div class="navbar-item"><img src="assets/sleek.png"></div>
-                    </div>
-                
-                    <div class="navbar-left">
-                        <a href="" class="navbar-item">Home</a>
-                        <a href="" class="navbar-item">Documentation</a>
+                        <a href="" class="navbar-item is-hidden-desktop"><i class="fab fa-github"></i></a>
+                        <div class="navbar-burger" data-target="hiddenMenu">
+                            <div class="navbar-item"><i class="fas fa-bars"></i></div>
+                        </div>
+                </div>                
+                    <div class="navbar-menu" id="hiddenMenu">
+                        <div class="navbar-left">
+                            <a href="" class="navbar-item">Home</a>
+                            <a href="" class="navbar-item">Documentation</a>
+                            <a href="" class="navbar-item">Templates</a>
+                        </div>
+                        <div class="navbar-right">
+                            <a href="" class="navbar-item is-hidden-touch"><i class="fab fa-github"></i></a>
+                            <div href="" class="navbar-item is-hidden-touch"><span class="button is-small is-white is-inverted">Download v0.0.1</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -22,7 +32,8 @@ title : Sleek
     <div class="hero-body">
         <div class="container is-centered">
             <img src="assets/sleek.png" height="250" width="250">
-            <p class="h1 is-bold">Sleek</p>
+            <p class="h1 is-bold is-marginless">Sleek</p>
+            <p class="h6">V0.0.1</p>
             <h5>A Simplistic Framework for your Awesome Website</h5>
             <br />
             <span class="button is-medium is-inverted is-dark">Download</span>

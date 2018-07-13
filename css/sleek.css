@@ -3,8 +3,6 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -910,6 +908,7 @@ body {
 
 h1, .h1 {
   font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -920,6 +919,7 @@ h1.is-bold, .h1.is-bold {
 
 h2, .h2 {
   font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -930,6 +930,7 @@ h2.is-bold, .h2.is-bold {
 
 h3, .h3 {
   font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -940,6 +941,7 @@ h3.is-bold, .h3.is-bold {
 
 h4, .h4 {
   font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -950,6 +952,7 @@ h4.is-bold, .h4.is-bold {
 
 h5, .h5 {
   font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -960,6 +963,7 @@ h5.is-bold, .h5.is-bold {
 
 h6, .h6 {
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 10px 0px;
 }
@@ -1932,6 +1936,10 @@ a.dropdown-item.is-active {
 
 .navbar-burger {
   margin-left: auto;
+  align-items: stretch;
+  display: flex;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   cursor: pointer;
 }
 
@@ -1943,6 +1951,18 @@ a.dropdown-item.is-active {
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
   position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-item.is-hidden-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-item.is-hidden-touch {
+    display: none;
+  }
 }
 
 .navbar-item img {
