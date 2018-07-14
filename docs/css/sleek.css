@@ -473,6 +473,7 @@ body {
   appearance: none;
   align-items: center;
   box-shadow: none;
+  border: 1px solid transparent;
   display: inline-flex;
   font-size: 1rem;
   justify-content: flex-start;
@@ -495,7 +496,7 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.button:focus, .button.is-focused, .button:active, .button.is-active, button:focus, button.is-focused, button:active, button.is-active, input[type=button]:focus, input[type=button].is-focused, input[type=button]:active, input[type=button].is-active, input[type=submit]:focus, input[type=submit].is-focused, input[type=submit]:active, input[type=submit].is-active {
+.button:focus, .button:active, .button.is-active, button:focus, button:active, button.is-active, input[type=button]:focus, input[type=button]:active, input[type=button].is-active, input[type=submit]:focus, input[type=submit]:active, input[type=submit].is-active {
   outline: none;
 }
 
@@ -2182,6 +2183,150 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
   border-radius: 290486px;
 }
 
+.input, .textarea {
+  appearance: none;
+  align-items: center;
+  box-shadow: none;
+  border: 1px solid transparent;
+  display: inline-flex;
+  font-size: 1rem;
+  justify-content: flex-start;
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-color: #a38b71;
+  color: #161616;
+  padding: 0.35em 0.75em;
+  border-radius: 2px;
+}
+
+.input:focus, .input:active, .input.is-active, .textarea:focus, .textarea:active, .textarea.is-active {
+  outline: none;
+}
+
+.input[disabled], .textarea[disabled] {
+  cursor: not-allowed;
+}
+
+.input:hover, .textarea:hover {
+  border-color: #695845;
+}
+
+.input:focus, .input.is-active, .input:active, .textarea:focus, .textarea.is-active, .textarea:active {
+  border-color: #a38b71;
+  box-shadow: 0 0 0 1.5px rgba(41, 40, 40, 0.25);
+}
+
+.input[disabled], .textarea[disabled] {
+  background-color: #161616;
+  box-shadow: none;
+}
+
+.input.is-white, .textarea.is-white {
+  border-color: #ffffff;
+}
+
+.input.is-white:focus, .input.is-white:active, .input.is-white.is-active, .textarea.is-white:focus, .textarea.is-white:active, .textarea.is-white.is-active {
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.25);
+}
+
+.input.is-black, .textarea.is-black {
+  border-color: #000000;
+}
+
+.input.is-black:focus, .input.is-black:active, .input.is-black.is-active, .textarea.is-black:focus, .textarea.is-black:active, .textarea.is-black.is-active {
+  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.25);
+}
+
+.input.is-primary, .textarea.is-primary {
+  border-color: #00aba9;
+}
+
+.input.is-primary:focus, .input.is-primary:active, .input.is-primary.is-active, .textarea.is-primary:focus, .textarea.is-primary:active, .textarea.is-primary.is-active {
+  box-shadow: 0 0 0 1.5px rgba(0, 171, 169, 0.25);
+}
+
+.input.is-danger, .textarea.is-danger {
+  border-color: #f44336;
+}
+
+.input.is-danger:focus, .input.is-danger:active, .input.is-danger.is-active, .textarea.is-danger:focus, .textarea.is-danger:active, .textarea.is-danger.is-active {
+  box-shadow: 0 0 0 1.5px rgba(244, 67, 54, 0.25);
+}
+
+.input.is-warning, .textarea.is-warning {
+  border-color: #f0d147;
+}
+
+.input.is-warning:focus, .input.is-warning:active, .input.is-warning.is-active, .textarea.is-warning:focus, .textarea.is-warning:active, .textarea.is-warning.is-active {
+  box-shadow: 0 0 0 1.5px rgba(240, 209, 71, 0.25);
+}
+
+.input.is-success, .textarea.is-success {
+  border-color: #24ac41;
+}
+
+.input.is-success:focus, .input.is-success:active, .input.is-success.is-active, .textarea.is-success:focus, .textarea.is-success:active, .textarea.is-success.is-active {
+  box-shadow: 0 0 0 1.5px rgba(36, 172, 65, 0.25);
+}
+
+.input.is-info, .textarea.is-info {
+  border-color: #2277d8;
+}
+
+.input.is-info:focus, .input.is-info:active, .input.is-info.is-active, .textarea.is-info:focus, .textarea.is-info:active, .textarea.is-info.is-active {
+  box-shadow: 0 0 0 1.5px rgba(34, 119, 216, 0.25);
+}
+
+.input.is-light, .textarea.is-light {
+  border-color: #dfd7ce;
+}
+
+.input.is-light:focus, .input.is-light:active, .input.is-light.is-active, .textarea.is-light:focus, .textarea.is-light:active, .textarea.is-light.is-active {
+  box-shadow: 0 0 0 1.5px rgba(223, 215, 206, 0.25);
+}
+
+.input.is-dark, .textarea.is-dark {
+  border-color: #292828;
+}
+
+.input.is-dark:focus, .input.is-dark:active, .input.is-dark.is-active, .textarea.is-dark:focus, .textarea.is-dark:active, .textarea.is-dark.is-active {
+  box-shadow: 0 0 0 1.5px rgba(41, 40, 40, 0.25);
+}
+
+.input.is-small, .textarea.is-small {
+  font-size: 0.75rem;
+}
+
+.input.is-medium, .textarea.is-medium {
+  font-size: 1.25rem;
+}
+
+.input.is-large, .textarea.is-large {
+  font-size: 1.5rem;
+}
+
+.textarea {
+  display: block;
+  padding: 0.5em;
+  resize: vertical;
+}
+
+.textarea:not([rows]) {
+  max-height: 600px;
+  min-height: 120px;
+}
+
+.textarea[rows] {
+  height: initial;
+}
+
+.textarea.has-fixed-size {
+  resize: none;
+}
+
 .container {
   margin: 0 auto;
   position: relative;
@@ -2216,13 +2361,6 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
   .container.is-large {
     max-width: 1136px;
     width: 1136px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .container {
-    margin-right: 4px;
-    margin-left: 4px;
   }
 }
 

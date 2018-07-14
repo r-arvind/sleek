@@ -3,7 +3,7 @@ $button-background-color: $white;
 $button-border: $white-er;
 
 .button, button, input[type=button], input[type=submit] {
-  @include button-control-flex;
+  @include remove-default;
   @include unselectable;
   background-color: $button-background-color;
   color: $button-color;

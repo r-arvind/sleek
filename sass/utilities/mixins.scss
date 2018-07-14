@@ -24,16 +24,17 @@
     *display: inline;
 }
 
-@mixin button-control-flex{
+@mixin remove-default{
     appearance: none;
     align-items: center;
     box-shadow: none;
+    border: 1px solid transparent;
     display: inline-flex;
     font-size: $size-normal;
     justify-content: flex-start;
     position: relative;
     vertical-align: top;
-    &:focus,&.is-focused,&:active,&.is-active{
+    &:focus,&:active,&.is-active{
       outline: none;
         }
     &[disabled]{

@@ -1,22 +1,41 @@
 .input,.textarea{
+    @include remove-default;
     max-width: 100%;
     width: 100%;
-//    background-color: $white;
-//    border-color: $grey-er;
+    background-color: $white;
+    border-color: darken($white-er,30);
     color: $text;
+    padding: 0.35em 0.75em;
+    border-radius: $radius-small;
     &:hover{
-        border-color: darken($grey-er, 10%);
+        border-color: darken($white-er, 50);
     }
-
+    &:focus,&.is-active,&:active{
+        border-color: darken($white-er, 30);
+        box-shadow: 0 0 0 1.5px rgba($grey, 0.25);
+    }
+    &[disabled]{
+        background-color: $text;
+        box-shadow: none;
+    }
     @each $name, $pair in $colorschemes {
         $bgcolor: nth($pair,1);
         $text-color:nth($pair,2);
         &.is-#{$name} {
             border-color: $bgcolor;
             &:focus,&:active,&.is-active{
-                //box-shadow: 0 0 0 0.125em rgba(0,0,0,0.25);
+                box-shadow: 0 0 0 1.5px rgba($bgcolor, 0.25);
             }
         }
+    }
+    &.is-small{
+        font-size: $size-small;
+    }
+    &.is-medium{
+        font-size: $size-medium;
+    }
+    &.is-large{
+        font-size: $size-large;
     }
 }
 
@@ -25,6 +44,14 @@
     padding: 0.5em;
     resize: vertical;
     &:not([rows]){
-        max-height: 600px;
+    max-height: 600px;
+    min-height: 120px;
     }
+  &[rows]{
+    height: initial;
+  }
+  // Modifiers
+  &.has-fixed-size{
+    resize: none;
+  }
 }
