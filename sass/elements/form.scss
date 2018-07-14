@@ -1,0 +1,30 @@
+.input,.textarea{
+    max-width: 100%;
+    width: 100%;
+//    background-color: $white;
+//    border-color: $grey-er;
+    color: $text;
+    &:hover{
+        border-color: darken($grey-er, 10%);
+    }
+
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text-color:nth($pair,2);
+        &.is-#{$name} {
+            border-color: $bgcolor;
+            &:focus,&:active,&.is-active{
+                //box-shadow: 0 0 0 0.125em rgba(0,0,0,0.25);
+            }
+        }
+    }
+}
+
+.textarea{
+    display: block;
+    padding: 0.5em;
+    resize: vertical;
+    &:not([rows]){
+        max-height: 600px;
+    }
+}

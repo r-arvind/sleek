@@ -2182,6 +2182,62 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
   border-radius: 290486px;
 }
 
+.input, .textarea {
+  max-width: 100%;
+  width: 100%;
+  color: #161616;
+}
+
+.input:hover, .textarea:hover {
+  border-color: black;
+}
+
+.input.is-white, .textarea.is-white {
+  border-color: #ffffff;
+}
+
+.input.is-black, .textarea.is-black {
+  border-color: #000000;
+}
+
+.input.is-primary, .textarea.is-primary {
+  border-color: #00aba9;
+}
+
+.input.is-danger, .textarea.is-danger {
+  border-color: #f44336;
+}
+
+.input.is-warning, .textarea.is-warning {
+  border-color: #f0d147;
+}
+
+.input.is-success, .textarea.is-success {
+  border-color: #24ac41;
+}
+
+.input.is-info, .textarea.is-info {
+  border-color: #2277d8;
+}
+
+.input.is-light, .textarea.is-light {
+  border-color: #dfd7ce;
+}
+
+.input.is-dark, .textarea.is-dark {
+  border-color: #292828;
+}
+
+.textarea {
+  display: block;
+  padding: 0.5em;
+  resize: vertical;
+}
+
+.textarea:not([rows]) {
+  max-height: 600px;
+}
+
 .container {
   margin: 0 auto;
   position: relative;
