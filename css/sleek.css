@@ -470,7 +470,8 @@ body {
 }
 
 .button, button, input[type=button], input[type=submit] {
-  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   align-items: center;
   box-shadow: none;
   border: 1px solid transparent;
@@ -2184,7 +2185,8 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
 }
 
 .input, .textarea {
-  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   align-items: center;
   box-shadow: none;
   border: 1px solid transparent;
@@ -2196,9 +2198,10 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
   max-width: 100%;
   width: 100%;
   background-color: #ffffff;
+  box-sizing: border-box;
   border-color: #a38b71;
   color: #161616;
-  padding: 0.35em 0.75em;
+  padding: 0.3em 0.75em;
   border-radius: 2px;
 }
 

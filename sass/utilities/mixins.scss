@@ -25,7 +25,8 @@
 }
 
 @mixin remove-default{
-    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     align-items: center;
     box-shadow: none;
     border: 1px solid transparent;

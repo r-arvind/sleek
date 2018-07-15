@@ -3,9 +3,10 @@
     max-width: 100%;
     width: 100%;
     background-color: $white;
+    box-sizing: border-box;
     border-color: darken($white-er,30);
     color: $text;
-    padding: 0.35em 0.75em;
+    padding: 0.3em 0.75em;
     border-radius: $radius-small;
     &:hover{
         border-color: darken($white-er, 50);
