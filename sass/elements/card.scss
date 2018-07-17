@@ -71,10 +71,11 @@
     }
 }
 .card-footer{
-  border-top: 1px solid $text;
+  border-top: 1px solid darken($white-er,5);
   align-items: stretch;
   display: flex;
 }
+
 .card-footer-item{
   align-items: center;
   display: flex;
@@ -84,6 +85,6 @@
   justify-content: center;
   padding: 0.75rem;
   &:not(:last-child){
-    border-right: 1px solid $text;
+    border-right: 1px solid darken($white-er,5);
   }
 }

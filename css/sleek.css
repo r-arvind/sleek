@@ -1686,7 +1686,7 @@ a.dropdown-item.is-active {
 }
 
 .card-footer {
-  border-top: 1px solid #161616;
+  border-top: 1px solid #d5cabf;
   align-items: stretch;
   display: flex;
 }
@@ -1702,7 +1702,7 @@ a.dropdown-item.is-active {
 }
 
 .card-footer-item:not(:last-child) {
-  border-right: 1px solid #161616;
+  border-right: 1px solid #d5cabf;
 }
 
 .navbar {
