@@ -1,0 +1,23 @@
+.footer{
+    padding: 2rem 1.5rem 4rem;
+    background-color: $white-er;
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        &.is-#{$name} {
+            background-color: $bgcolor;
+        }
+    }
+
+    &.is-sticky{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+html,body{
+    &.has-sticky-footer{
+        padding-bottom: 6rem;
+    }
+}

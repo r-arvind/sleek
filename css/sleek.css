@@ -2798,4 +2798,56 @@ footer, .hero-foot {
   margin-left: 100%;
 }
 
+.footer {
+  padding: 2rem 1.5rem 4rem;
+  background-color: #dfd7ce;
+}
+
+.footer.is-white {
+  background-color: #ffffff;
+}
+
+.footer.is-black {
+  background-color: #000000;
+}
+
+.footer.is-primary {
+  background-color: #00aba9;
+}
+
+.footer.is-danger {
+  background-color: #f44336;
+}
+
+.footer.is-warning {
+  background-color: #f0d147;
+}
+
+.footer.is-success {
+  background-color: #24ac41;
+}
+
+.footer.is-info {
+  background-color: #2277d8;
+}
+
+.footer.is-light {
+  background-color: #dfd7ce;
+}
+
+.footer.is-dark {
+  background-color: #292828;
+}
+
+.footer.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+html.has-sticky-footer, body.has-sticky-footer {
+  padding-bottom: 6rem;
+}
+
 /*# sourceMappingURL=sleek.css.map */
