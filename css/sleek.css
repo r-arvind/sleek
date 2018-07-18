@@ -2803,40 +2803,53 @@ footer, .hero-foot {
   background-color: #dfd7ce;
 }
 
+.footer.is-small {
+  padding: 2rem 1.5rem 1.5rem;
+}
+
 .footer.is-white {
   background-color: #ffffff;
+  color: #161616;
 }
 
 .footer.is-black {
   background-color: #000000;
+  color: #ffffff;
 }
 
 .footer.is-primary {
   background-color: #00aba9;
+  color: #ffffff;
 }
 
 .footer.is-danger {
   background-color: #f44336;
+  color: #ffffff;
 }
 
 .footer.is-warning {
   background-color: #f0d147;
+  color: #ffffff;
 }
 
 .footer.is-success {
   background-color: #24ac41;
+  color: #ffffff;
 }
 
 .footer.is-info {
   background-color: #2277d8;
+  color: #ffffff;
 }
 
 .footer.is-light {
   background-color: #dfd7ce;
+  color: #292828;
 }
 
 .footer.is-dark {
   background-color: #292828;
+  color: #ffffff;
 }
 
 .footer.is-sticky {

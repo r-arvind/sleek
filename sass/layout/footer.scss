@@ -1,10 +1,15 @@
 .footer{
     padding: 2rem 1.5rem 4rem;
+    &.is-small{
+        padding: 2rem 1.5rem 1.5rem;
+    }
     background-color: $white-er;
     @each $name, $pair in $colorschemes {
         $bgcolor: nth($pair,1);
+        $text-color: nth($pair,2);
         &.is-#{$name} {
             background-color: $bgcolor;
+            color: $text-color;
         }
     }
 
