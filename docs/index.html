@@ -6,29 +6,7 @@ title : Sleek
 <div class="hero is-fullheight is-white">
 
     <div class="hero-header">
-            <div class="navbar is-dark">
-                <div class="container is-large">
-                    <div class="navbar-brand">
-                        <div class="navbar-item"><img src="assets/sleek.png"></div>
-                        <a href="" class="navbar-item is-hidden-desktop"><i class="fab fa-github"></i></a>
-                        <div class="navbar-burger" data-target="hiddenMenu">
-                            <div class="navbar-item"><i class="fas fa-bars"></i></div>
-                        </div>
-                </div>                
-                    <div class="navbar-menu" id="hiddenMenu">
-                        <div class="navbar-left">
-                            <a href="" class="navbar-item">Home</a>
-                            <a href="" class="navbar-item">Documentation</a>
-                            <a href="" class="navbar-item">Templates</a>
-                            <div class="navbar-item"><input type="text" class="input is-dark" placeholder="Search"></div>
-                        </div>
-                        <div class="navbar-right">
-                            <a href="" class="navbar-item is-hidden-touch"><i class="fab fa-github"></i></a>
-                            <div href="" class="navbar-item is-hidden-touch"><span class="button is-small is-white is-inverted">Download v0.0.1</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        {% include navbar.html %}
     </div>
     <div class="hero-body">
         <div class="container is-centered">
@@ -91,15 +69,4 @@ title : Sleek
         </div>
     </div>
 </div>
-
-<div class="footer is-info is-small">
-
-    <div class="container">
-        <a href="http://" style="color: white;"><u>Github</u></a>
-        <a href="http://" style="color: white;"><u>Documentation</u></a>
-        <a href="http://" style="color: white;"><u>Twitter</u></a>
-    </div>
-    <div class="container">
-        Made with love By <a href="http://github.com/r-arvind" style="color: white;"><u>@r-arvind</u></a>
-    </div>
-</div>
+{% include footer.html %}

@@ -52,13 +52,16 @@
     flex-grow: 1;
     flex-shrink: 1;
     padding: 0.75em;
-    @for $i from 1 through 12{
-    .columns > &.is-#{$i}{
-      flex: none;
-      width: percentage($i / 12);
-    }
-    .columns > &.is-offset-#{$i}{
-      margin-left: percentage($i / 12);
-    }   
+
+    @include tablet{
+        @for $i from 1 through 12{
+        .columns > &.is-#{$i}{
+        flex: none;
+        width: percentage($i / 12);
+            }
+        .columns > &.is-offset-#{$i}{
+        margin-left: percentage($i / 12);
+            }   
+        }
     }
 }
