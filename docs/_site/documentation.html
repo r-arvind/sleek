@@ -39,59 +39,134 @@
         <div class="hero is-fullscreen">
             <div class="hero-body">
                 <h1>Documentation</h1>
-                    <div class="panel is-info">
-                        <div class="panel-head">
-                            Notice
+                <div class="panel is-info">
+                    <div class="panel-head">
+                        Notice
+                    </div>
+                    <div class="panel-body">
+                        This page is supposed to contain an overview of all the contents in documentation. This site is still under construction
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="alert is-danger">
+                            <h3>Overview</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illum ab maiores, reiciendis expedita
+                                facilis a velit et totam tempora natus consectetur provident sed consequatur, tenetur voluptatum,
+                                hic quo minima!</p>
                         </div>
-                        <div class="panel-body">
-                        This page is supposed to contain an overview of all the contents in documentation.
-                        This site is still under construction
                     </div>
+                    <div class="column">
+                        <div class="alert is-primary">
+                            <h3>Components</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, perferendis. Maxime
+                                nobis deleniti inventore beatae cupiditate possimus ea at obcaecati et asperiores consequatur,
+                                mollitia.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="columns">
-                        <div class="column"><div class="alert is-danger"><h3>Overview</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illum ab maiores, reiciendis expedita facilis a velit et totam tempora natus consectetur provident sed consequatur, tenetur voluptatum, hic quo minima!</p></div></div>
-                        <div class="column"><div class="alert is-primary"><h3>Components</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, perferendis. Maxime nobis deleniti inventore beatae cupiditate possimus ea at obcaecati et asperiores consequatur, mollitia.</p></div></div>
-
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="alert is-success">
+                            <h3>Layout</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi eaque a, beatae ut laudantium
+                                commodi, doloribus, cumque amet accusamus esse quidem! Cum nihil quae explicabo. Dolor eligendi
+                                maxime accusamus!</p>
+                        </div>
                     </div>
-                    <div class="columns">
-                        <div class="column"><div class="alert is-success"><h3>Layout</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi eaque a, beatae ut laudantium commodi, doloribus, cumque amet accusamus esse quidem! Cum nihil quae explicabo. Dolor eligendi maxime accusamus!</p></div></div>
-                        <div class="column"><div class="alert is-dark"><h3>Forms</h3><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet officiis, error commodi autem harum doloribus ducimus laudantium. Commodi, nemo facilis temporibus ratione nulla fugit nihil!</p></div></div>
-
+                    <div class="column">
+                        <div class="alert is-dark">
+                            <h3>Forms</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet officiis, error commodi autem
+                                harum doloribus ducimus laudantium. Commodi, nemo facilis temporibus ratione nulla fugit
+                                nihil!
+                            </p>
+                        </div>
                     </div>
+
+                </div>
             </div>
         </div>
     </div>
 
     <div class="column is-3">
-        <div class="alert">
-            <input type="text" class="input is-medium">
-            <h5>Layouts</h5>
-            <ul>
-                <li>Grid System</li>
-                <li>Hero</li>
-                <li>Footer</li>
-            </ul>
-            <h5>Components</h5>
-            <ul>
-                <li>Button</li>
-                <li>Alert</li>
-                <li>Notification</li>
-                <li>Panel</li>
-                <li>Badge</li>
-                <li>Card</li>
-                <li>Dropdown</li>
-                <li>Progress</li>
-                <li>Tooltip</li>
-                <li>Typography</li>
-            </ul>
-            <h5>Forms</h5>
-            <ul>
-                <li>Input</li>
-                <li>TextArea</li>
-                <li>Radio</li>
-                <li>Select</li>
-            </ul>
+        <div class="alert is-white">
+            <div class="block">
+            <input type="text" class="input is-medium" placeholder="Search">
+        </div>
+            <div class="accordion is-medium" onclick="acc(this)">
+                    <div class="accordion-head">
+                        Overview
+                    </div>
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Installation</li>
+                            <li>Getting started</li>
+                            <li>Examples</li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="accordion is-medium" onclick="acc(this)">
+                <div class="accordion-head">
+                    Layout
+                </div>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Grid System</li>
+                        <li>Hero</li>
+                        <li>Footer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion is-medium" onclick="acc(this)">
+                    <div class="accordion-head">
+                        Elements
+                    </div>
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Button</li>
+                            <li>TextArea</li>
+                            <li>Radio</li>
+                            <li>Select</li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="accordion is-medium" onclick="acc(this)">
+                <div class="accordion-head">
+                    Components
+                </div>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Button</li>
+                        <li>Alert</li>
+                        <li>Notification</li>
+                        <li>Panel</li>
+                        <li>Badge</li>
+                        <li>Card</li>
+                        <li>Dropdown</li>
+                        <li>Progress</li>
+                        <li>Tooltip</li>
+                        <li>Typography</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion is-medium" onclick="acc(this)">
+                <div class="accordion-head">
+                    Forms
+                </div>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Input</li>
+                        <li>TextArea</li>
+                        <li>Radio</li>
+                        <li>Select</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

@@ -51,3 +51,7 @@
         margin-bottom: 1.5rem;
     }
 }
+
+.block{
+    @include block;
+}

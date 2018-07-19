@@ -12,3 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Toggle the class on both the "navbar-burger" and the "navbar-menu"
             $el.classList.toggle('is-active');
             $target.classList.toggle('is-active');});});}});
+
+function acc(ele){
+    ele.classList.toggle('is-active');
+}

@@ -1,31 +1,45 @@
 .accordion{
     .accordion-head{
         user-select: none;
-        -moz-user-select: none;
+        font-size: $size-normal;
         cursor: pointer;
-        text-decoration: none;
         background-color: $white-er;
         padding: 0.35em 0.75em;
         box-shadow: none;
         transition: all 0.3s ease 0s;
         &:hover,&:focus{
             background-color: darken($white-er,12);
-                }
-            }
-        @each $name, $pair in $colorschemes {
-            $bgcolor: nth($pair,1);
-            $text:nth($pair,2);
-            &.is-#{$name} {
-                .accordion-head{
-                    background-color: $bgcolor;
-                    color: $text;
-                    &:hover,&:focus{
-                        background-color: darken($bgcolor,12);
-                    }
+        }
+    }
+    @each $name, $pair in $colorschemes {
+        $bgcolor: nth($pair,1);
+        $text:nth($pair,2);
+        &.is-#{$name} {
+            .accordion-head{
+                background-color: $bgcolor;
+                color: $text;
+                &:hover,&:focus{
+                    background-color: darken($bgcolor,12);
                 }
             }
         }
-    
+    }
+
+    &.is-large{
+        .accordion-head{
+            font-size: $size-large;
+        }
+    }
+    &.is-medium{
+        .accordion-head{
+            font-size: $size-medium;
+        }
+    }
+    &.is-small{
+        .accordion-head{
+            font-size: $size-small;
+        }
+    }
 
     .accordion-body{
         padding: 0.35em 0.75em;

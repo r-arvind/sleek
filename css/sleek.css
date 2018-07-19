@@ -1,3 +1,7 @@
+.block:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -2472,9 +2476,8 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
 
 .accordion .accordion-head {
   user-select: none;
-  -moz-user-select: none;
+  font-size: 1rem;
   cursor: pointer;
-  text-decoration: none;
   background-color: #dfd7ce;
   padding: 0.35em 0.75em;
   box-shadow: none;
@@ -2564,6 +2567,18 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
 
 .accordion.is-dark .accordion-head:hover, .accordion.is-dark .accordion-head:focus {
   background-color: #0a0a0a;
+}
+
+.accordion.is-large .accordion-head {
+  font-size: 1.5rem;
+}
+
+.accordion.is-medium .accordion-head {
+  font-size: 1.25rem;
+}
+
+.accordion.is-small .accordion-head {
+  font-size: 0.75rem;
 }
 
 .accordion .accordion-body {
