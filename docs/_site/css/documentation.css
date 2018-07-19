@@ -1,7 +1,12 @@
 .has-border-right{
     border-right: 1px solid rgba(29, 29, 29, 0.603);
 }
-
 .is-fixed{
     position: fixed;
+}
+.select{
+    cursor: pointer;
+}
+.select:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.377);
 }
