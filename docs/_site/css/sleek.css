@@ -2571,10 +2571,12 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
 
 .accordion.is-large .accordion-head {
   font-size: 1.5rem;
+  padding: 0.5em 0.9em;
 }
 
 .accordion.is-medium .accordion-head {
   font-size: 1.25rem;
+  padding: 0.45em 0.85em;
 }
 
 .accordion.is-small .accordion-head {

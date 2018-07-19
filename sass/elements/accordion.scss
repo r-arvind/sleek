@@ -28,11 +28,15 @@
     &.is-large{
         .accordion-head{
             font-size: $size-large;
+            padding: 0.5em 0.9em;
+
         }
     }
     &.is-medium{
         .accordion-head{
             font-size: $size-medium;
+            padding: 0.45em 0.85em;
+
         }
     }
     &.is-small{
