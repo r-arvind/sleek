@@ -2470,6 +2470,113 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
   font-size: 1.5rem;
 }
 
+.accordion .accordion-head {
+  user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #dfd7ce;
+  padding: 0.35em 0.75em;
+  box-shadow: none;
+  transition: all 0.3s ease 0s;
+}
+
+.accordion .accordion-head:hover, .accordion .accordion-head:focus {
+  background-color: #c7b9a9;
+}
+
+.accordion.is-white .accordion-head {
+  background-color: #ffffff;
+  color: #161616;
+}
+
+.accordion.is-white .accordion-head:hover, .accordion.is-white .accordion-head:focus {
+  background-color: #e0e0e0;
+}
+
+.accordion.is-black .accordion-head {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.accordion.is-black .accordion-head:hover, .accordion.is-black .accordion-head:focus {
+  background-color: black;
+}
+
+.accordion.is-primary .accordion-head {
+  background-color: #00aba9;
+  color: #ffffff;
+}
+
+.accordion.is-primary .accordion-head:hover, .accordion.is-primary .accordion-head:focus {
+  background-color: #006e6d;
+}
+
+.accordion.is-danger .accordion-head {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.accordion.is-danger .accordion-head:hover, .accordion.is-danger .accordion-head:focus {
+  background-color: #e11b0c;
+}
+
+.accordion.is-warning .accordion-head {
+  background-color: #f0d147;
+  color: #ffffff;
+}
+
+.accordion.is-warning .accordion-head:hover, .accordion.is-warning .accordion-head:focus {
+  background-color: #e7c013;
+}
+
+.accordion.is-success .accordion-head {
+  background-color: #24ac41;
+  color: #ffffff;
+}
+
+.accordion.is-success .accordion-head:hover, .accordion.is-success .accordion-head:focus {
+  background-color: #19792e;
+}
+
+.accordion.is-info .accordion-head {
+  background-color: #2277d8;
+  color: #ffffff;
+}
+
+.accordion.is-info .accordion-head:hover, .accordion.is-info .accordion-head:focus {
+  background-color: #1a5aa3;
+}
+
+.accordion.is-light .accordion-head {
+  background-color: #dfd7ce;
+  color: #292828;
+}
+
+.accordion.is-light .accordion-head:hover, .accordion.is-light .accordion-head:focus {
+  background-color: #c7b9a9;
+}
+
+.accordion.is-dark .accordion-head {
+  background-color: #292828;
+  color: #ffffff;
+}
+
+.accordion.is-dark .accordion-head:hover, .accordion.is-dark .accordion-head:focus {
+  background-color: #0a0a0a;
+}
+
+.accordion .accordion-body {
+  padding: 0.35em 0.75em;
+  overflow: hidden;
+  background-color: white;
+  display: none;
+}
+
+.accordion.is-active .accordion-body {
+  display: block;
+}
+
 .container {
   margin: 0 auto;
   position: relative;

@@ -1,0 +1,42 @@
+.accordion{
+    .accordion-head{
+        user-select: none;
+        -moz-user-select: none;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: $white-er;
+        padding: 0.35em 0.75em;
+        box-shadow: none;
+        transition: all 0.3s ease 0s;
+        &:hover,&:focus{
+            background-color: darken($white-er,12);
+                }
+            }
+        @each $name, $pair in $colorschemes {
+            $bgcolor: nth($pair,1);
+            $text:nth($pair,2);
+            &.is-#{$name} {
+                .accordion-head{
+                    background-color: $bgcolor;
+                    color: $text;
+                    &:hover,&:focus{
+                        background-color: darken($bgcolor,12);
+                    }
+                }
+            }
+        }
+    
+
+    .accordion-body{
+        padding: 0.35em 0.75em;
+        overflow: hidden;
+        background-color: white;
+        display: none;
+    }
+
+    &.is-active{
+        .accordion-body{
+            display: block;
+        }
+    }
+}
