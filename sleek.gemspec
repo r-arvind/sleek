@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nithin Raj"]
   spec.email         = ["nithin.raj@iiitb.org"]
 
-  spec.summary       = "test for the homies"
-  spec.description   = "test for ma peeps"
+  spec.summary       = "A CSS framework that'll make your website look awesome!"
+  spec.description   = ""
   spec.homepage      = "https://github.com/nithinr07/sleek/tree/gem"
   spec.license       = "MIT"
 
