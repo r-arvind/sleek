@@ -1,8 +1,6 @@
 # Sleek
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sleek`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A CSS framework for your Rails website!
 
 ## Installation
 
@@ -39,7 +37,7 @@ If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html
 
 Then restart your webserver if it was previously running.
 
-
+Visit https://r-arvind.github.io/sleek to get to know the various components that'll make your website look awesome!
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/nithinr07/sleek. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
