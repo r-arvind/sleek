@@ -22,7 +22,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In your `application.css`, include the file:
+
+```css
+/*
+ *= require sleek
+ */
+```
+
+If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
+`application.scss` file:
+
+```scss
+@import "sleek";
+```
+
+Then restart your webserver if it was previously running.
+
 
 ## Development
 
