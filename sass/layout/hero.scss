@@ -61,6 +61,12 @@ header,.hero-head{
     display: block;
     flex-grow: 0;
     flex-shrink: 0;
+
+    &a.navbar-item{
+        &.is-active{
+            background-color: transparent;
+        }
+    }
 }
 
 footer,.hero-foot{

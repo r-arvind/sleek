@@ -31,7 +31,7 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/sleek.css css/sleek.css",
     "build-cleancss": "cleancss -o css/sleek.min.css css/sleek.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true sleek.scss css/sleek.css --watch",
+    "build-sass": "node-sass --output-style expanded --source-map true sleek.scss css/sleek.css ",
     "build-sass-docs": "node-sass --output-style expanded --source-map true sleek.scss docs/css/sleek.css --watch",
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
     "deploy": "npm run build",

@@ -55,11 +55,11 @@
 
     @include tablet{
         @for $i from 1 through 12{
-        .columns > &.is-#{$i}{
+        &.is-#{$i}{
         flex: none;
         width: percentage($i / 12);
             }
-        .columns > &.is-offset-#{$i}{
+        &.is-offset-#{$i}{
         margin-left: percentage($i / 12);
             }   
         }
