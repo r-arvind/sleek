@@ -1630,7 +1630,7 @@ a.dropdown-item.is-active {
   background-color: transparent;
   border: transparent;
   box-shadow: none;
-  color: white;
+  color: #161616;
 }
 
 .card.is-transparent:hover {
@@ -2730,6 +2730,10 @@ header, .hero-head {
   display: block;
   flex-grow: 0;
   flex-shrink: 0;
+}
+
+headera.navbar-item.is-active, .hero-heada.navbar-item.is-active {
+  background-color: transparent;
 }
 
 footer, .hero-foot {
