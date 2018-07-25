@@ -1,8 +1,9 @@
 .has-border-right{
     border-right: 1px solid rgba(29, 29, 29, 0.603);
 }
-.is-fixed{
+.is-fixed-right{
     position: fixed;
+    right: 0;
 }
 .select{
     cursor: pointer;
@@ -15,14 +16,19 @@
     display: inline-flex;
 }
 
+.is-stationary{
+    position: absolute;
+}
+
 
 .show{
     display: flex;
     justify-content: center;
     vertical-align: middle;
+    align-items: baseline;
+    border: 2px solid rgba(228, 228, 228, 0.753);
     flex-wrap: wrap;
     padding: 2em;
-    border: 2px solid rgba(228, 228, 228, 0.753);
 }
 
 .show-code{
