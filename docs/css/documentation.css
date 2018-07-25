@@ -10,3 +10,29 @@
 .select:hover{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.377);
 }
+
+.badges{
+    display: inline-flex;
+}
+
+
+.show{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    padding: 2em;
+    border: 2px solid rgba(228, 228, 228, 0.753);
+}
+
+.show-code{
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    overflow: scroll;
+}
+
+.show > *{
+    margin: 5px;
+}
