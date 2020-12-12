@@ -1,2 +1,7 @@
 url: https://sleek.arvindrs.com
-include: [_redirects"]
+include: ["_redirects"]
+tagline: Sleek is an awesome CSS Frameowrk for your awesome website
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
