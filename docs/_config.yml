@@ -1,7 +1,11 @@
-url: https://sleek.arvindrs.com
+url: "https://sleek.arvindrs.com"
+baseurl: ""
 include: ["_redirects"]
 tagline: Sleek is an awesome CSS Frameowrk for your awesome website
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, vendor]
